@@ -1,4 +1,4 @@
-.carousel-item-main {
+/* .carousel-item-main {
     position: relative;
     justify-content: center;
 }
@@ -15,7 +15,6 @@
     margin: auto;
     transform: translateX(-330px);
     color: white;
-    /* font-family: "Dosis"; */
     z-index: 2;
     font-size: 50px;
     text-align: center;
@@ -40,20 +39,41 @@
 
 .carousel-item-themes img {
     width: 100%;
-    /* height: 80vh; */
 }
 
 
-.carousel-item-themes h3 {
-    /* position: absolute;
-    top: 0;
-    left: 50%; */
+.carousel-item-themes h3 {    
     margin: auto;
-    /* transform: translateX(-50px); */
     color: black;
     z-index: 2;
     font-size: 30px;
     text-align: center;
+} */
+
+.carousel-item-themes h3 {    
+    margin: auto;
+    color: black;
+    z-index: 2;
+    font-size: 30px;
+    text-align: center;
+}
+
+.carousel-item-themes img {
+    width: 100%;
+}
+
+#main{
+    padding-top: 100px;
+    max-width: 1111px;
+    margin: auto;
+}
+
+#main h3{
+    text-align: center;
+}
+
+#main-image-content img{
+    width: 100%;
 }
 
 #carouselModuls .carousel-control-prev {
@@ -82,6 +102,9 @@
     width: 200px; margin: auto
 }
 
+.content-img-slide img{
+    width: 100%;
+}
 
 .explain {
     text-align: center;
@@ -94,4 +117,8 @@
 
 .explain p {
     text-align: left;
+}
+
+#moduls-content{
+    height: 300px;
 }

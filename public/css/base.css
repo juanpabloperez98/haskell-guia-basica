@@ -32,10 +32,16 @@
     width: 100%;
 }
 
-#body{
+.body{
     max-width: 1111px;
     margin: auto;
 }
+
+.recuadros{
+    background-image: url('../images/all/RecuadrosTransparencia.png');
+    background-size: cover;
+}
+
 
 .desactivate{
     display: none;

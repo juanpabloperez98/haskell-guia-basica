@@ -5,11 +5,11 @@
 @endsection
 
 @section('content')
-    <div id="carouselExampleControls" class="carousel slide pt-5" data-ride="carousel">
+    {{-- <div id="carouselExampleControls" class="carousel slide pt-5" data-ride="carousel">
         <div class="carousel-inner carousel-inner-main">
             <div class="carousel-item carousel-item-main active">
                 <h3>APRENDE EL PARADIGMA DE PROGRAMACIÓN FUNCIONAL</h3>
-                <img src="{{ asset('images/images_slider/1.jpg') }}" alt="imagen1">
+                <img src="{{ asset('images/images_slider/1.jpg') }}" alt="imagen">
             </div>
             <div class="carousel-item carousel-item-main">
                 <h3>CONOCE EL LENGUAJE HASKELL</h3>
@@ -32,10 +32,32 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
+    </div> --}}
+    <div class="bg-light">
+        <main id="main">
+            <div class="row mx-auto">
+                <div class="col-lg-6 col-md-6">
+                    <h3>Guía del paradigma imperativo con haskell</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus, facilis eveniet. Sapiente
+                        officia, non vel quas quis nulla quo, fugit aliquid ad iste amet rerum porro magnam nesciunt maxime
+                        labore!f
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus, facilis eveniet. Sapiente
+                        officia, non vel quas quis nulla quo, fugit aliquid ad iste amet rerum porro magnam nesciunt maxime
+                        labore!f
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <aside id="main-image-content">
+                        <img src="{{ asset('images/all/utpHaskell.png') }}" alt="HaskellLogo">
+                    </aside>
+                </div>
+            </div>
+        </main>
     </div>
 
-    <div id="body">
-        <div class="row mx-auto p-2">
+    <div class="body">
+        <div class="row mx-auto p-2 recuadros">
             <div class="col-lg-12 col-12 mt-1 explain">
                 <h2 class="">¿Que es Haskell?</h2>
                 <p>
@@ -65,6 +87,10 @@
                     nostrum alias fugit ad suscipit aperiam?
                 </p>
             </div>
+        </div>
+    </div>
+    <div class="row mx-auto p-2 bg-light">
+        <div class="body">
             <div class="col-lg-12 col-12 mt-4 explain" id="modulos">
                 <h2 class="">MÓDULOS</h2>
                 <p>
@@ -84,48 +110,57 @@
                             <div class="carousel-item carousel-item-themes active">
                                 <div class="row">
                                     <div class="col-lg-4">
-                                        <div class="content-img-slide"><img src="{{ asset('images/operadores.png') }}" alt="imagen1"></div>
-                                        <h3>TEMA 1</h3>
+                                        <div class="content-img-slide"><img src="{{ asset('images/programacionFuncional/funciones.png') }}"
+                                                alt="imagen"></div>
+                                        <h3>Programación Funcional</h3>
                                     </div>
                                     <div class="col-lg-4">
-                                        <div class="content-img-slide"><img src="{{ asset('images/operadores.png') }}" alt="imagen1"></div>
-                                        <h3>TEMA 2</h3>
+                                        <div class="content-img-slide"><img src="{{ asset('images/queesHaskell/logo_haskell.png') }}"
+                                                alt="imagen2"></div>
+                                        <h3>¿Qué es haskell?... introducción</h3>
                                     </div>
                                     <div class="col-lg-4">
-                                        <div class="content-img-slide"><img src="{{ asset('images/operadores.png') }}" alt="imagen1"></div>
-                                        <h3>TEMA 3</h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item carousel-item-themes">
-                                <div class="row">
-                                    <div class="col-lg-4">
-                                        <div class="content-img-slide"><img src="{{ asset('images/operadores.png') }}" alt="imagen1"></div>
-                                        <h3>TEMA 4</h3>
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <div class="content-img-slide"><img src="{{ asset('images/operadores.png') }}" alt="imagen1"></div>
-                                        <h3>TEMA 5</h3>
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <div class="content-img-slide"><img src="{{ asset('images/operadores.png') }}" alt="imagen1"></div>
-                                        <h3>TEMA 6</h3>
+                                        <div class="content-img-slide"><img src="{{ asset('images/polimorfismo/poliformismo.png') }}"
+                                                alt="imagen"></div>
+                                        <h3>Funciones de orden superior y polimorfismo</h3>
                                     </div>
                                 </div>
                             </div>
                             <div class="carousel-item carousel-item-themes">
                                 <div class="row">
                                     <div class="col-lg-4">
-                                        <div class="content-img-slide"><img src="{{ asset('images/operadores.png') }}" alt="imagen1"></div>
-                                        <h3>TEMA 7</h3>
+                                        <div class="content-img-slide"><img src="{{ asset('images/operadores.png') }}"
+                                                alt="imagen"></div>
+                                        <h3>Definición de tipos</h3>
                                     </div>
                                     <div class="col-lg-4">
-                                        <div class="content-img-slide"><img src="{{ asset('images/operadores.png') }}" alt="imagen1"></div>
-                                        <h3>TEMA 8</h3>
+                                        <div class="content-img-slide"><img src="{{ asset('images/operadores.png') }}"
+                                                alt="imagen"></div>
+                                        <h3>Sistema de clases en haskell</h3>
                                     </div>
                                     <div class="col-lg-4">
-                                        <div class="content-img-slide"><img src="{{ asset('images/operadores.png') }}" alt="imagen1"></div>
-                                        <h3>TEMA 9</h3>
+                                        <div class="content-img-slide"><img src="{{ asset('images/operadores.png') }}"
+                                                alt="imagen"></div>
+                                        <h3>Listas</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item carousel-item-themes">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="content-img-slide"><img src="{{ asset('images/operadores.png') }}"
+                                                alt="imagen"></div>
+                                        <h3>Entrada y salida</h3>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="content-img-slide"><img src="{{ asset('images/operadores.png') }}"
+                                                alt="imagen"></div>
+                                        <h3>Arboles y grafos</h3>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="content-img-slide"><img src="{{ asset('images/operadores.png') }}"
+                                                alt="imagen"></div>
+                                        <h3>Tipos de datos abstractos</h3>
                                     </div>
                                 </div>
                             </div>
@@ -147,11 +182,12 @@
 
 @section('scripts')
     <script>
-        $('#open-moduls').on('click',(e)=>{
+        $('#open-moduls').on('click', (e) => {
             e.preventDefault()
             // alert("Oprimido")
             $('#moduls-content').toggle('explode')
             $('#arrow_open').toggle('explode')
         })
+
     </script>
 @endsection

@@ -18,7 +18,7 @@
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <div style="width: 40px" class="d-inline-block">
-                    <img class="d-inline-block" src="{{ asset('images/logo_haskell.png') }}" alt="logo_haskell">
+                    <img class="d-inline-block" src="{{ asset('images/all/logo_haskell.png') }}" alt="logo_haskell">
                 </div>
                 <span class="ml-2">Guía del paradigma imperativo con Haskell</span>
             </a>
