@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ asset('css/base.css') }}">
 
-    <link rel="icon" type="image/png" href="{{ asset('images/logo_haskell.png') }}" />
+    <link rel="icon" type="image/png" href="{{ asset('images/icons/logo_haskell.ico') }}" />
     {{-- Bootstrap --}}
     <link rel="stylesheet" href="{{ asset('css/bootstrap/bootstrap.min.css') }}">
     @yield('styles')
