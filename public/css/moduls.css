@@ -1,0 +1,43 @@
+aside {
+    padding-top: 80px;
+    width: 23%;
+    height: 100vh;
+    position: fixed;
+}
+
+aside h4 {
+    text-align: center;
+    font-size: 30px;
+    margin: 0px 0px 50px 0px;
+}
+
+aside ul {
+    padding: 0px;
+}
+
+aside ul li {
+    list-style: none;
+    margin: 20px auto 0px auto;
+    padding: 7px 0px;
+    text-align: center;
+}
+
+.section-info-moduls {
+    padding-top: 50px;
+    max-width: 77%;
+    margin-left: 23%;
+}
+
+.section-info-moduls h4{
+    font-size: 35px;
+    text-align: center;
+}
+
+.active{
+    color: #f8c555;
+}
+
+footer{
+    width: 77%;
+    margin-left: 23% !important;
+}

@@ -14,3 +14,11 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::prefix('programacion-funcional/')->group(function () {
+    Route::get('index/', function () {
+        return view('funcional.index', [
+            'page' => 'modul'
+        ]);
+    })->name('funcional');
+});
