@@ -2,58 +2,68 @@
     font-family: "Source_Sans_Pro_Extra";
     src: url("../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf");
 }
+
 @font-face {
     font-family: "Dosis";
     src: url("../fonts/Dosis/Dosis-Regular.ttf");
 }
 
-*{
+* {
     font-family: "Dosis";
 }
 
-#nav{
+#nav {
     position: fixed;
     width: 100%;
     height: 50px;
-    z-index: 2;    
+    z-index: 2;
     background-color: white;
     border-bottom: 1px solid black;
 }
 
-#nav .nav-item a:hover{
+#nav .nav-item a:hover {
     border-bottom: 1px solid black;
 }
 
-.container-fluid{
+.container-fluid {
     max-width: 1111px;
 }
 
-.container-fluid img{
+.container-fluid img {
     width: 100%;
 }
 
-.body{
+.color-yellow {
+    color: #fdba36;
+    font-weight: bold
+}
+
+.color-blue {
+    color: #3e5eb1;
+    font-weight: bold
+}
+
+.body {
     max-width: 1111px;
     margin: auto;
 }
 
-.recuadros{
+.recuadros {
     background-image: url('../images/all/RecuadrosTransparencia.png');
     background-size: cover;
 }
 
-
-.desactivate{
+.desactivate {
     display: none;
 }
 
-footer{
+footer {
     background-color: black;
     color: white;
     padding: 20px 10px;
     margin: 30px auto 0px auto !important;
 }
 
-footer a{
+footer a {
     color: white;
 }

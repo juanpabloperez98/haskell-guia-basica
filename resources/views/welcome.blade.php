@@ -9,7 +9,7 @@
         <main id="main">
             <div class="row mx-auto">
                 <div class="col-lg-6 col-md-6">
-                    <h3>Guía del paradigma funcional con haskell</h3>
+                    <h3 class="color-yellow">Guía del paradigma funcional con haskell</h3>
                     <p>
                         Este es un nuevo software desarrollado por la Universidad Tecnológica de Pereira, el cual busca
                         servir como ayuda para el aprendizaje de la programación funcional basados en el lenguaje de
@@ -31,7 +31,7 @@
     <div class="body">
         <div class="row mx-auto p-2 recuadros">
             <div class="col-lg-12 col-12 mt-1 explain">
-                <h2 class="">¿Qué es Haskell?</h2>
+                <h2 class="color-blue">¿Qué es Haskell?</h2>
                 <p>
                     Haskell es uno de los lenguajes lideres a la hora de enseñar programación funcional, pues permite
                     escribir código simple y claro, enseña como estructurar y razonar programas. Haskell es diferente a
@@ -41,7 +41,7 @@
                 </p>
             </div>
             <div class="col-lg-6 col-md-6 col-12 explain">
-                <h2>¿Qué son los módulos?</h2>
+                <h2 class="color-yellow">¿Qué son los módulos?</h2>
                 <p>
                     Los módulos son secciones en esta pagina donde se encuentran todos los temas relacionados a la
                     programación funcional y al lenguaje de programación Haskell, cada uno de estos módulos cuenta con una
@@ -50,7 +50,7 @@
                 </p>
             </div>
             <div class="col-lg-6 col-md-6 col-12 explain">
-                <h2>¿Qué son los ejercicios?</h2>
+                <h2 class="color-blue">¿Qué son los ejercicios?</h2>
                 <p>
                     Los ejercicios se encuentran en un apartado dentro de cada módulo, estos ejercicios son problemas
                     planteados los cuales se le piden al usuario desarrollar dentro del software. Estos ejercicios buscan
@@ -63,7 +63,7 @@
     <div class="row mx-auto p-2 bg-light">
         <div class="body">
             <div class="col-lg-12 col-12 mt-4 explain" id="modulos">
-                <h2 class="">MÓDULOS</h2>
+                <h2 class="color-yellow">MÓDULOS</h2>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, animi possimus corrupti, facilis
                     aspernatur est modi optio eos consequatur sint iusto, tempora excepturi id molestias. Aut odit accusamus

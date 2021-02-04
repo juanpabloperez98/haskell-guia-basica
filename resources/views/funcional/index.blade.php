@@ -8,7 +8,7 @@
 
     {{-- Left Content --}}
     <aside class="bg-light">
-        <h4>Programación Funcional</h4>
+        <h4 class="color-blue">Programación Funcional</h4>
         <ul>
             <li><a href="#" data-name="funciones" class="item active">1.1 Funciones</a></li>
             <li><a href="#" data-name="sesiones" class="item">1.2 Sesiones y Declaraciones</a></li>
@@ -20,7 +20,7 @@
 
     <div class="row section-info-moduls">
         <div class="col-lg-12 mx-auto px-3 pt-5" id="funciones">
-            <h4>1.1 Funciones</h4>
+            <h4 class="color-yellow">1.1 Funciones</h4>
             <p class="my-4">
                 En matemáticas, hablar de una función F entre dos conjuntos A y B, llamados conjunto inicial y final, es una
                 correspondencia que cada elemento de un subconjunto de A, llamado el dominio de F, le hace corresponder uno
@@ -91,7 +91,7 @@
         </div>
 
         <div class="col-lg-12 mx-auto px-3 pt-5 desactivate" id="sesiones">
-            <h4>1.2 Sesiones y Declaraciones</h4>
+            <h4 class="color-blue">1.2 Sesiones y Declaraciones</h4>
             <p class="my-4">
                 Programar consiste en especificar al ordenador los pasos que debe seguir para resolver un problema. La
                 solución a un problema es un valor que se calcula a partir de ciertos datos, por lo que un modo natural de
@@ -203,11 +203,11 @@
         </div>
 
         <div class="col-lg-12 mx-auto px-3 pt-5 desactivate" style="height: 100vh" id="reduccion">
-            <h4>1.3 Reducción de expresiones</h4>
+            <h4 class="color-yellow">1.3 Reducción de expresiones</h4>
         </div>
 
         <div class="col-lg-12 mx-auto px-3 pt-5 desactivate" style="height: 100vh" id="sobrehaskell">
-            <h4>1.4 Sobre Haskell</h4>
+            <h4 class="color-blue">1.4 Sobre Haskell</h4>
         </div>
 
 
