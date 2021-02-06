@@ -5,6 +5,10 @@ aside {
     position: fixed;
 }
 
+aside a{
+    color: #3e5eb1;
+}
+
 aside h4 {
     text-align: center;
     font-size: 30px;
