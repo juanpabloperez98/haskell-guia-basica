@@ -25,11 +25,11 @@
                 y sólo uno de un subconjunto de B llamado imagen de F. La notación utilizada suele ser:
             </p>
             <pre class="line-numbers">
-                                                                                                                                                                                                                                                    <code class="language-haskell">
-                                                                                                                                                                                                                                    &#402;: A -> B
-                                                                                                                                                                                                                                    &#402;(&#120;) -> ...
-                                                                                                                                                                                                                                                    </code>
-                                                                                                                                                                                                                                                </pre>
+                                                                                                                                                                                                                                                                                            <code class="language-haskell">
+                                                                                                                                                                                                                                                                            &#402;: A -> B
+                                                                                                                                                                                                                                                                            &#402;(&#120;) -> ...
+                                                                                                                                                                                                                                                                                            </code>
+                                                                                                                                                                                                                                                                                        </pre>
 
             <p class="my-4">
                 Un ejemplo sencillo sería es la función sucesora con un dominio e imagen como el conjunto de los números
@@ -37,11 +37,11 @@
             </p>
 
             <pre class="line-numbers">
-                                                                                                                                                                                                                                <code class="language-haskell">
-                                                                                                                                                                                                                sucesor: Z -> Z  
-                                                                                                                                                                                                                sucesor:(&#120;) -> &#120; + 1
-                                                                                                                                                                                                                                </code>
-                                                                                                                                                                                                                            </pre>
+                                                                                                                                                                                                                                                                        <code class="language-haskell">
+                                                                                                                                                                                                                                                        sucesor: Z -> Z  
+                                                                                                                                                                                                                                                        sucesor:(&#120;) -> &#120; + 1
+                                                                                                                                                                                                                                                                        </code>
+                                                                                                                                                                                                                                                                    </pre>
 
             <p class="my-4">
                 Aquí existen funciones de varias variables. Por ejemplo, defínase una función como <span
@@ -50,11 +50,11 @@
             </p>
 
             <pre class="line-numbers">
-                                                                                                                                                                                                                            <code class="language-haskell">
-                                                                                                                                                                                                            sumaCuadrados: Z x Z  -> Z
-                                                                                                                                                                                                            sumaCuadrados(x,y): -> x² + y²
-                                                                                                                                                                                                                            </code>
-                                                                                                                                                                                                                        </pre>
+                                                                                                                                                                                                                                                                    <code class="language-haskell">
+                                                                                                                                                                                                                                                    sumaCuadrados: Z x Z  -> Z
+                                                                                                                                                                                                                                                    sumaCuadrados(x,y): -> x² + y²
+                                                                                                                                                                                                                                                                    </code>
+                                                                                                                                                                                                                                                                </pre>
 
             <p class="my-4">
                 Esta función es de dos variables. Incluso se es habitual definir funciones de ceros variables denominadas
@@ -62,11 +62,11 @@
             </p>
 
             <pre class="line-numbers">
-                                                                                                                                                                                                                        <code class="language-haskell">
-                                                                                                                                                                                                            π :  R
-                                                                                                                                                                                                            π -> 3.1415927
-                                                                                                                                                                                                                        </code>
-                                                                                                                                                                                                                    </pre>
+                                                                                                                                                                                                                                                                <code class="language-haskell">
+                                                                                                                                                                                                                                                    π :  R
+                                                                                                                                                                                                                                                    π -> 3.1415927
+                                                                                                                                                                                                                                                                </code>
+                                                                                                                                                                                                                                                            </pre>
 
             <p class="my-4">
                 Cuando se define una función, suele interesarse evaluar la función para ciertos valores de la variable, es
@@ -74,10 +74,10 @@
             </p>
 
             <pre class="line-numbers">
-                                                                                                                                                                                                                    <code class="language-haskell">
-                                                                                                                                                                                                        sucesor(1) -> 2
-                                                                                                                                                                                                                    </code>
-                                                                                                                                                                                                                </pre>
+                                                                                                                                                                                                                                                            <code class="language-haskell">
+                                                                                                                                                                                                                                                sucesor(1) -> 2
+                                                                                                                                                                                                                                                            </code>
+                                                                                                                                                                                                                                                        </pre>
 
             <p class="my-4">
                 Es de esta manera que se denota que el valor de la función sucesor para el valor 1 es igual a 2. Cuando la
@@ -101,10 +101,10 @@
                 siguiente solicitando la expresión a evaluar:
             </p>
             <pre class="line-numbers">
-                                                                                                                                                                                                        <code class="language-haskell">
-                                                                                                                                                                                        Prelude >
-                                                                                                                                                                                                        </code>
-                                                                                                                                                                                                    </pre>
+                                                                                                                                                                                                                                                <code class="language-haskell">
+                                                                                                                                                                                                                                Prelude >
+                                                                                                                                                                                                                                                </code>
+                                                                                                                                                                                                                                            </pre>
 
 
             <p class="my-4">
@@ -115,16 +115,16 @@
             </p>
 
             <pre class="line-numbers">
-                                                                                                                                                                                        <code class="language-haskell">
-                                                                                                                                                                        Prelude > 1 + 2
-                                                                                                                                                                                        </code>
-                                                                                                                                                                                    </pre>
+                                                                                                                                                                                                                                <code class="language-haskell">
+                                                                                                                                                                                                                Prelude > 1 + 2
+                                                                                                                                                                                                                                </code>
+                                                                                                                                                                                                                            </pre>
             <div class="desactivate" id="result-code1">
                 <pre>
-                                                                                                                                                                                    <code class="language-haskell">
-                                                                                                                                                                    3 :: Integer
-                                                                                                                                                                                    </code>
-                                                                                                                                                                                </pre>
+                                                                                                                                                                                                                            <code class="language-haskell">
+                                                                                                                                                                                                            3 :: Integer
+                                                                                                                                                                                                                            </code>
+                                                                                                                                                                                                                        </pre>
             </div>
             <a href="#" data-close="1" id="probar1" class="btn btn-primary ejecutar">Probar</a>
             <a href="#" id="btn1" class="btn-primary cerrar desactivate">Cerrar</a>
@@ -146,16 +146,16 @@
 
 
             <pre class="line-numbers">
-                                                                                                                                                                    <code class="language-haskell">
-                                                                                                                                                    Prelude > cos pi
-                                                                                                                                                                    </code>
-                                                                                                                                                                </pre>
+                                                                                                                                                                                                            <code class="language-haskell">
+                                                                                                                                                                                            Prelude > cos pi
+                                                                                                                                                                                                            </code>
+                                                                                                                                                                                                        </pre>
             <div class="desactivate" id="result-code2">
                 <pre>
-                                                                                                                                                                <code class="language-haskell">
-                                                                                                                                                    -1.0 :: Double
-                                                                                                                                                                </code>
-                                                                                                                                                            </pre>
+                                                                                                                                                                                                        <code class="language-haskell">
+                                                                                                                                                                                            -1.0 :: Double
+                                                                                                                                                                                                        </code>
+                                                                                                                                                                                                    </pre>
             </div>
 
             <a href="#" data-close="2" id="probar2" class="btn btn-primary ejecutar">Probar</a>
@@ -174,16 +174,16 @@
             </p>
 
             <pre class="line-numbers">
-                                                                                                                                                            <code class="language-haskell">
-                                                                                                                                            Prelude > cos (2 * pi)
-                                                                                                                                                            </code>
-                                                                                                                                                        </pre>
+                                                                                                                                                                                                    <code class="language-haskell">
+                                                                                                                                                                                    Prelude > cos (2 * pi)
+                                                                                                                                                                                                    </code>
+                                                                                                                                                                                                </pre>
             <div class="desactivate" id="result-code3">
                 <pre>
-                                                                                                                                                        <code class="language-haskell">
-                                                                                                                                            -1.0 :: Double
-                                                                                                                                                        </code>
-                                                                                                                                                    </pre>
+                                                                                                                                                                                                <code class="language-haskell">
+                                                                                                                                                                                    -1.0 :: Double
+                                                                                                                                                                                                </code>
+                                                                                                                                                                                            </pre>
             </div>
 
             <a href="#" data-close="3" id="probar3" class="btn btn-primary ejecutar">Probar</a>
@@ -201,18 +201,18 @@
 
 
             <pre class="line-numbers">
-                                                                                                                                                <code class="language-haskell">
-                                                                                                                                Prelude > [1..5]
-                                                                                                                                Prelude > sum[1..10]
-                                                                                                                                                </code>
-                                                                                                                                            </pre>
+                                                                                                                                                                                        <code class="language-haskell">
+                                                                                                                                                                        Prelude > [1..5]
+                                                                                                                                                                        Prelude > sum[1..10]
+                                                                                                                                                                                        </code>
+                                                                                                                                                                                    </pre>
             <div class="desactivate" id="result-code4">
                 <pre>
-                                                                                                                                            <code class="language-haskell">
-                                                                                                                                [1,2,3,4,5] :: [Integer]
-                                                                                                                                55 :: Integer
-                                                                                                                                            </code>
-                                                                                                                                        </pre>
+                                                                                                                                                                                    <code class="language-haskell">
+                                                                                                                                                                        [1,2,3,4,5] :: [Integer]
+                                                                                                                                                                        55 :: Integer
+                                                                                                                                                                                    </code>
+                                                                                                                                                                                </pre>
             </div>
 
             <a href="#" data-close="4" id="probar4" class="btn btn-primary ejecutar">Probar</a>
@@ -232,18 +232,18 @@
 
 
             <pre class="line-numbers">
-                                                                                                                                        <code class="language-haskell">
-                                                                                                                        Prelude > mod 10 3
-                                                                                                                        Prelude > mod 10 (3 + 1)
-                                                                                                                                        </code>
-                                                                                                                                    </pre>
+                                                                                                                                                                                <code class="language-haskell">
+                                                                                                                                                                Prelude > mod 10 3
+                                                                                                                                                                Prelude > mod 10 (3 + 1)
+                                                                                                                                                                                </code>
+                                                                                                                                                                            </pre>
             <div class="desactivate" id="result-code5">
                 <pre>
-                                                                                                                                    <code class="language-haskell">
-                                                                                                                        1 :: Integer
-                                                                                                                        2 :: Integer
-                                                                                                                                    </code>
-                                                                                                                                </pre>
+                                                                                                                                                                            <code class="language-haskell">
+                                                                                                                                                                1 :: Integer
+                                                                                                                                                                2 :: Integer
+                                                                                                                                                                            </code>
+                                                                                                                                                                        </pre>
             </div>
 
             <a href="#" data-close="5" id="probar5" class="btn btn-primary ejecutar">Probar</a>
@@ -259,11 +259,11 @@
             </p>
 
             <pre class="line-numbers">
-                                                                                                                            <code class="language-haskell">
-                                                                                                            sucesor :: Integer -> Integer
-                                                                                                            sucesor x = x + 1
-                                                                                                                            </code>
-                                                                                                                        </pre>
+                                                                                                                                                                    <code class="language-haskell">
+                                                                                                                                                    sucesor :: Integer -> Integer
+                                                                                                                                                    sucesor x = x + 1
+                                                                                                                                                                    </code>
+                                                                                                                                                                </pre>
 
             <p class="my-4">
                 En esta definición, <span style="color: blue">sucesor</span> es el nombre de la nueva función creada. El
@@ -280,11 +280,11 @@
             </p>
 
             <pre class="line-numbers">
-                                                                                                            <code class="language-haskell">
-                                                                                            sucesor :: Integer -> Integer
-                                                                                            sucesor y = y + 1
-                                                                                                            </code>
-                                                                                                        </pre>
+                                                                                                                                                    <code class="language-haskell">
+                                                                                                                                    sucesor :: Integer -> Integer
+                                                                                                                                    sucesor y = y + 1
+                                                                                                                                                    </code>
+                                                                                                                                                </pre>
 
 
             <p class="my-4">
@@ -297,19 +297,19 @@
             </p>
 
             <pre class="line-numbers">
-                                                                                                <code class="language-haskell">
-                                                                                                    Prelude > sucesor 3
-                                                                                                    Prelude > 10 * sucesor 3
-                                                                                                </code>
-                                                                                            </pre>
+                                                                                                                                        <code class="language-haskell">
+                                                                                                                                            Prelude > sucesor 3
+                                                                                                                                            Prelude > 10 * sucesor 3
+                                                                                                                                        </code>
+                                                                                                                                    </pre>
 
             <div class="desactivate" id="result-code6">
                 <pre>
-                                                                                                <code class="language-haskell">
-                                                                                    4 :: Integer
-                                                                                    40 :: Integer
-                                                                                                </code>
-                                                                                            </pre>
+                                                                                                                                        <code class="language-haskell">
+                                                                                                                            4 :: Integer
+                                                                                                                            40 :: Integer
+                                                                                                                                        </code>
+                                                                                                                                    </pre>
             </div>
 
             <a href="#" data-close="6" id="probar6" class="btn btn-primary ejecutar">Probar</a>
@@ -321,11 +321,11 @@
             </p>
 
             <pre class="line-numbers">
-                                                                                        <code class="language-haskell">
-                                                                                            sumaCuadrados :: Integer -> Integer -> Integer
-                                                                                            sumaCuadrados x y = x * x + y * y
-                                                                                        </code>
-                                                                                    </pre>
+                                                                                                                                <code class="language-haskell">
+                                                                                                                                    sumaCuadrados :: Integer -> Integer -> Integer
+                                                                                                                                    sumaCuadrados x y = x * x + y * y
+                                                                                                                                </code>
+                                                                                                                            </pre>
 
             <p class="my-4">
                 La función toma dos argumentos enteros y calcula la suma de sus cuadrados
@@ -333,19 +333,19 @@
 
 
             <pre class="line-numbers">
-                                                                                <code class="language-haskell">
-                                                                                    Prelude > sumaCuadrados 2 3
-                                                                                    Prelude > sumaCuadrados (2 + 2) 3
-                                                                                </code>
-                                                                            </pre>
+                                                                                                                        <code class="language-haskell">
+                                                                                                                            Prelude > sumaCuadrados 2 3
+                                                                                                                            Prelude > sumaCuadrados (2 + 2) 3
+                                                                                                                        </code>
+                                                                                                                    </pre>
 
             <div class="desactivate" id="result-code7">
                 <pre>
-                                                                                    <code class="language-haskell">
-                                                                        13 :: Integer
-                                                                        25 :: Integer
-                                                                                    </code>
-                                                                                </pre>
+                                                                                                                            <code class="language-haskell">
+                                                                                                                13 :: Integer
+                                                                                                                25 :: Integer
+                                                                                                                            </code>
+                                                                                                                        </pre>
             </div>
 
             <a href="#" data-close="7" id="probar7" class="btn btn-primary ejecutar">Probar</a>
@@ -371,25 +371,25 @@
                     style="color: blue">doble</span> de su argumento:
             </p>
             <pre class="line-numbers">
-                                                                        <code class="language-haskell">
-                                                            doble :: Integer -> Integer
-                                                            doble x = x + x
-                                                                        </code>
-                                                                    </pre>
+                                                                                                                <code class="language-haskell">
+                                                                                                    doble :: Integer -> Integer
+                                                                                                    doble x = x + x
+                                                                                                                </code>
+                                                                                                            </pre>
             <p class="my-4">
                 Se puede calcular el valor de la expresión 5 * <span style="color: blue">doble</span> 3 del siguiente modo:
             </p>
             <pre class="line-numbers">
-                                                                        <code class="language-haskell">
-                                                            5 * doble 3
-                                                            => {por definicion de doble}
-                                                            5 * (3 + 3)
-                                                            => {por el operador (+)}
-                                                            5 + 6
-                                                            => {por el operador (*)}
-                                                            30
-                                                                        </code>
-                                                                    </pre>
+                                                                                                                <code class="language-haskell">
+                                                                                                    5 * doble 3
+                                                                                                    => {por definicion de doble}
+                                                                                                    5 * (3 + 3)
+                                                                                                    => {por el operador (+)}
+                                                                                                    5 + 6
+                                                                                                    => {por el operador (*)}
+                                                                                                    30
+                                                                                                                </code>
+                                                                                                            </pre>
             <p class="my-4">
                 Se llamará a cada uno de los pasos anteriores una redacción, que se denotará con el símbolo =>. Como se ve,
                 en cada paso de reducción el evaluador busca una parte de la expresión que sea simplificable (se llamara
@@ -411,18 +411,18 @@
                 anidados).
             </p>
             <pre class="line-numbers">
-                                                                <code class="language-haskell">
-                                                    doble(doble 3)
-                                                    => {por definicion de doble}
-                                                    doble(3 + 3)
-                                                    => {por el operador (+)}
-                                                    doble 6
-                                                    => {por definicion de doble}
-                                                    6 + 6
-                                                    => {por el operador (+)}
-                                                    12
-                                                                </code>
-                                                            </pre>
+                                                                                                        <code class="language-haskell">
+                                                                                            doble(doble 3)
+                                                                                            => {por definicion de doble}
+                                                                                            doble(3 + 3)
+                                                                                            => {por el operador (+)}
+                                                                                            doble 6
+                                                                                            => {por definicion de doble}
+                                                                                            6 + 6
+                                                                                            => {por el operador (+)}
+                                                                                            12
+                                                                                                        </code>
+                                                                                                    </pre>
             <p class="my-4">
                 Esta es la forma en la que la mayoría de los programadores (es decir nosotros), probablemente, hubieran
                 reducido la expresión anterior. Sin embargo, esta estrategia presenta algunos problemas. Una estrategia
@@ -433,10 +433,10 @@
                 argumento por dos copias del argumento separadas por el operador <span style="color: #f8c555">(+)</span>:
             </p>
             <pre class="line-numbers">
-                                                            <code class="language-haskell">
-                                                doble (x) => x + x
-                                                            </code>
-                                                        </pre>
+                                                                                                    <code class="language-haskell">
+                                                                                        doble (x) => x + x
+                                                                                                    </code>
+                                                                                                </pre>
             <p class="my-4">
                 Es decir, no es necesario evaluar previamente el parámetro para aplicar la definición de la función <span
                     style="color: blue">doble</span>.
@@ -445,22 +445,22 @@
             </p>
 
             <pre class="line-numbers">
-                                                        <code class="language-haskell">
-                                                            doble(doble 3)
-                                                            => {por definicion de doble}
-                                                            (doble 3) + (doble 3)
-                                                            => {por definicion de doble}
-                                                            (3 + 3) + (doble 3)
-                                                            => {por el operador (+)}
-                                                            6 + (doble 3)
-                                                            => {por definicion de doble}
-                                                            6 + (3 + 3)
-                                                            => {por el operador (+)}
-                                                            6 + 6
-                                                            => {por el operador (+)}
-                                                            12
-                                                        </code>
-                                                    </pre>
+                                                                                                <code class="language-haskell">
+                                                                                                    doble(doble 3)
+                                                                                                    => {por definicion de doble}
+                                                                                                    (doble 3) + (doble 3)
+                                                                                                    => {por definicion de doble}
+                                                                                                    (3 + 3) + (doble 3)
+                                                                                                    => {por el operador (+)}
+                                                                                                    6 + (doble 3)
+                                                                                                    => {por definicion de doble}
+                                                                                                    6 + (3 + 3)
+                                                                                                    => {por el operador (+)}
+                                                                                                    6 + 6
+                                                                                                    => {por el operador (+)}
+                                                                                                    12
+                                                                                                </code>
+                                                                                            </pre>
 
 
             <p class="my-4">
@@ -486,16 +486,16 @@
             </p>
 
             <pre class="line-numbers">
-                                            <code class="language-haskell">
-                                infinito :: Integer
-                                infinito = 1 + infinito
+                                                                                    <code class="language-haskell">
+                                                                        infinito :: Integer
+                                                                        infinito = 1 + infinito
 
-                                cero :: Integer -> Integer
-                                cero x = 0
-                                            </code>
-                                        </pre>
+                                                                        cero :: Integer -> Integer
+                                                                        cero x = 0
+                                                                                    </code>
+                                                                                </pre>
 
-            <p class="my-4">
+            <p class="my-4" id="primera-cero-infinito">
                 La función cero devuelve el valor 0 sea cual sea su argumento, por lo que se tendrá <span class="px-3"
                     style="background-color: black">
                     <span style="color: white">n :: Integer * <span style="color: #f8c555">cero</span> n ==> 0</span></span>
@@ -508,37 +508,144 @@
 
 
             <pre class="line-numbers">
-                                        <code class="language-haskell">
-                            cero infinito
-                            => {por definicion de infinito}
-                            cero (1 + infinito)
-                            => {por definicion de infinito}
-                            cero (1 + (1 + infinito))
-                            => {por definicion de infinito}
-                            ...
+                                                                                <code class="language-haskell">
+                                                                    cero infinito
+                                                                    => {por definicion de infinito}
+                                                                    cero (1 + infinito)
+                                                                    => {por definicion de infinito}
+                                                                    cero (1 + (1 + infinito))
+                                                                    => {por definicion de infinito}
+                                                                    ...
 
-                                        </code>
-                                    </pre>
+                                                                                </code>
+                                                                            </pre>
 
-            <p class="my-4">
+            <p class="my-4" id="segunda-cero-infinito">
                 Y la evaluación no terminaría nunca, por lo que no se obtendría ningún resultado. Sin embargo, si en cada
                 paso se elige el <span style="color: #f8c555">redex</span> más interno, se alcanza la forma normal en un
                 solo paso:
             </p>
 
             <pre class="line-numbers">
-                                    <code class="language-haskell">
-                        cero infinito
-                        => {por definicion de cero}
-                        0
-                                    </code>
-                                </pre>
+                                                                            <code class="language-haskell">
+                                                                cero infinito
+                                                                => {por definicion de cero}
+                                                                0
+                                                                            </code>
+                                                                        </pre>
 
             <p class="my-4">
                 Como se puede ver, la estrategia utilizada para seleccionar el <span style="color: #f8c555">redex</span> es
                 crucial, ya que puede hacer que se
                 obtenga o no la forma normal de la expresión
             </p>
+
+
+            <h5 style="font-weight: bold">1.3.1 órdenes de reducción aplicativo y normal</h5>
+
+            <p class="my-4">
+                Un orden de reducción es una estrategia que indica qué <span style="color: blue">redex</span> hay que
+                seleccionar en cada paso de la
+                reducción. Existen varios órdenes de reducción: dos de los más interesantes son el orden aplicativo y el
+                orden normal. <br>
+                El orden aplicativo es utilizado en la primera reducción del ejemplo anterior y consiste en seleccionar
+                siempre el <span style="color: blue">redex</span> más interno (el más anidado en la expresión). En caso de
+                que existan varios <span style="color: blue">redexes</span> que
+                cumplan la condición anterior, se selecciona el que aparece más a la izquierda en la expresión. Esta
+                estrategia de reducción es conocida como paso de parámetros por valor. Esto se debe a que, ante una
+                aplicación de función, se reducen primero los parámetros de la función. Una vez conocidos los valores de los
+                parámetros, se sustituyen en la ecuación de la función. Los evaluadores que utilizan este orden se les llama
+                estrictos o impacientes. Uno de los problemas del paso por valor es que, a veces, se efectúan reducciones
+                que no son necesarias para calcular el valor de la expresión. Por ejemplo, la siguiente reducción usa este
+                orden para calcular el valor de la expresión cero (10 * 4):
+            </p>
+
+            <pre class="line-numbers">
+                                                <code class="language-haskell">
+                                    cero (10 * 4)
+                                    => {por el operador (*) }
+                                    cero 40
+                                    => {por definicion de cero}
+                                    0
+                                                </code>
+                                            </pre>
+
+            <p class="my-4">
+                La expresión 10*4 fue reducida, aunque dicha reducción no es necesaria para calcular el resultado, ya que la
+                función cero no necesita conocer el valor de su argumento. El ejemplo puede parecer artificial, pero en la
+                práctica es habitual definir funciones que no necesitan evaluar todos sus parámetros. La estrategia de paso
+                por valor tiene un problema aun más grave: puede no conducir a la forma normal de la expresión. Éste es el
+                caso de la expresión <a style="color: #f8c555" href="#primera-cero-infinito">cero infinito</a>: <br>
+
+                El orden de la reducción normal consiste en seleccionar el redex más externo (menos anidado) y, en caso de
+                conflicto, de entre los más externos el que aparece más a la izquierda de la expresión. Esta estrategia de
+                reducción se conoce como paso de parámetros por nombre, ya que se pasan como parámetro expresiones en vez de
+                valores. Este orden fue el utilizado en la segunda reducción de la expresión <a style="color: #f8c555"
+                    href="#segunda-cero-infinito">cero infinito</a>. A los
+                evaluadores que utilizan el orden normal se les llama no estrictos. Una característica muy interesante del
+                paso por nombre es que es normalizante: si la expresión considerada tiene forma normal, una reducción que
+                use este orden la alcanza. Este resultado es conocido como el teorema de estandarización. Además, un
+                evaluador no estricto sólo reducirá aquellos <span style="color: blue">redexes</span> que son necesarios
+                para calcular el resultado final.
+                Esta característica hace posible trabajar con estructuras de datos infinitas en los programas, aun siendo la
+                memoria del ordenador finita. Se estudiará esto más a fondo en módulos posteriores
+            </p>
+
+            <h5 style="font-weight: bold">1.3.2 Evaluación perezosa</h5>
+
+            <p class="my-4">
+                Una reducción con paso por nombre (reducción normal) puede hacer que ciertas expresiones se reduzcan varias
+                veces. Se puede observar que en la reducción no estricta de la expresión <span
+                    style="color: blue">doble</span> (<span style="color: blue">doble</span> 3) la expresión (3 +
+                3) es calculada dos veces. Esto no ocurre en la reducción paso por valor para la misma expresión. La
+                estrategia de paso de parámetros por necesidad, también conocida como evaluación perezosa, soluciona este
+                problema. La evaluación perezosa consiste en utilizar paso por nombre y recordar los valores de los
+                argumentos ya calculados para evitar que el cálculo se repita.
+            </p>
+
+            <div style="width: 50%; height: 300px;">
+                <img style="width: 100%" src="{{ asset('images/programacionFuncional/1.png') }}" alt="image 1">
+            </div>
+
+            <p class="my-4">
+                Para ello cada expresión se representa mediante un grafo. Por ejemplo, en la figura anterior, se muestra la
+                reducción de grafos correspondiente a la definición de función <span style="color: blue">doble</span>. Puede
+                observarse que, en vez de crear
+                dos copias del argumento de la función, se crean dos referencias al argumento original.
+            </p>
+
+            <div style="width: 50%; height: 300px;background-color: blue"></div>
+
+            <p class="my-4">
+                La figura anterior muestra la reducción de la expresión <span style="color: blue">doble</span> (<span
+                    style="color: blue">doble</span> 3) utilizando evaluación perezosa. Con
+                objeto de poder expresar textualmente reducciones perezosas, se nombrará las expresiones compartidas. Así,
+                la reducción de la figura anterior se escribiría como:
+            </p>
+
+            <pre class="line-numbers">
+                    <code class="language-haskell">
+        doble (doble 3)
+        => { por definición de doble }
+        a + a donde a = doble 3
+        => { por definición de doble }
+        a + a dona a = b + b donde b = 3
+        => { por el operador (+) }
+        a + a donde a = 6
+        => { por el operador (+) }
+        12
+                    </code>
+                </pre>
+
+            <p class="my-4">
+                Obsérvese que la evaluación de las sumas no se ha repetido y que sólo fueron necesarias 4 reducciones para
+                alcanzar la forma normal. Esto es el resultado general, ya que utilizando evaluación perezosa no se
+                realizarán más reducciones que utilizando paso por valor. Como se puede ver, la evaluación perezosa posee
+                las
+                ventajas del paso por nombre y no es menos eficiente que el paso por valor. Es por ello que la mayoría de
+                las implementaciones de Haskell utilizan un evaluador perezoso.
+            </p>
+
 
         </div>
 
