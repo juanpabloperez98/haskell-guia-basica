@@ -41,6 +41,28 @@ aside ul li {
     color: #f8c555;
 }
 
+.btn-amarillo{
+    background-color: #f8c555;
+    color: white;
+}
+
+.btn-amarillo:hover{
+    background-color: #fcbc34;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-azul{
+    background-color: #3e5eb1;
+    color: white;
+}
+
+.btn-azul:hover{
+    background-color: #3e5eb1;
+    color: white;
+    font-weight: bold;
+}
+
 footer{
     width: 77%;
     margin-left: 23% !important;
