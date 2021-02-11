@@ -31,12 +31,21 @@
                             <a class="nav-link active" aria-current="page" href="#modulos">Módulos</a>
                         </li>
                     @else
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="{{ url('/')}} ">
-                                <img src="{{ asset('images/icons/arrow-back.png') }}" class="mr-1" style="width: 15px" alt="arrow-icon">
-                                Volver
-                            </a>
-                        </li>
+                        @if ($page == 'ejemplo')
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="{{ route('funcional') }}">
+                                    <img src="{{ asset('images/icons/arrow-back.png') }}" class="mr-1" style="width: 15px" alt="arrow-icon">
+                                    Volver
+                                </a>
+                            </li>
+                        @else
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="{{ url('/')}} ">
+                                    <img src="{{ asset('images/icons/arrow-back.png') }}" class="mr-1" style="width: 15px" alt="arrow-icon">
+                                    Volver
+                                </a>
+                            </li>
+                        @endif
                     @endif
                 </ul>
             </div>
@@ -56,6 +65,7 @@
     <script src="{{ asset('js/bootstrap/jquery-3.4.1.min.js') }}"></script>
     <script src="{{ asset('js/bootstrap/bootstrap.min.js') }}"></script>
     <script src="{{ asset('js/prism.js') }}"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     @yield('scripts')
 </body>
 
