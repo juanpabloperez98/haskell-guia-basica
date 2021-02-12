@@ -633,7 +633,7 @@
                                                                 => { por definición de doble }
                                                                 a + a donde a = doble 3
                                                                 => { por definición de doble }
-                                                                a + a dona a = b + b donde b = 3
+                                                                a + a donde a = b + b donde b = 3
                                                                 => { por el operador (+) }
                                                                 a + a donde a = 6
                                                                 => { por el operador (+) }
@@ -690,7 +690,7 @@
                                 Según la definición de función, se pide que declare una función llamada
                                 DobleNumero(), la cual recibirá como parámetro una variable (x) y esta devolverá el valor de
                                 multiplicar (x) * 2</p>
-                            <a href="{{ route('ejemplo1') }}" class="btn btn-amarillo">Ir al ejemplo</a>
+                            <a  href="{{ route('ejemplos', ['id'=>1]) }}" class="btn btn-amarillo">Ir al ejemplo</a>
                         </div>
                     </div>
                 </div>
@@ -703,7 +703,7 @@
                                 usuario por pantalla y luego utilizando la función DobleNumero() pasándole como parámetro el
                                 número ingresado por el usuario, calcule la suma entre lo que devuelva la función y el
                                 número ingresado anteriormente</p>
-                            <a href="{{ route('ejemplo2') }}" class="btn btn-azul">Ir al ejemplo</a>
+                            <a  href="{{ route('ejemplos', ['id'=>2]) }}" class="btn btn-azul">Ir al ejemplo</a>
                         </div>
                     </div>
                 </div>
@@ -715,7 +715,7 @@
                                 Realice una función que pida un número a un usuario, y calcule la suma de los números
                                 comprendidos desde 1 hasta el número ingresado por el usuario
                             </p>
-                            <a href="{{ route('ejemplo3') }}" class="btn btn-amarillo">Ir al ejemplo</a>
+                            <a  href="{{ route('ejemplos', ['id'=>3]) }}" class="btn btn-amarillo">Ir al ejemplo</a>
                         </div>
                     </div>
                 </div>
@@ -727,7 +727,7 @@
                                 Dada una expresión, se pide que realice la reducción de la expresión hasta llegar a su
                                 forma normal (utilizando el método de reducción aplicativo)
                             </p>
-                            <a href="{{ route('ejemplo4') }}" class="btn btn-azul">Ir al ejemplo</a>
+                            <a  href="{{ route('ejemplos', ['id'=>4]) }}" class="btn btn-azul">Ir al ejemplo</a>
                         </div>
                     </div>
                 </div>
@@ -739,7 +739,7 @@
                                 Dada una expresión, se pide que realice la reducción de la expresión hasta llegar a su
                                 forma normal (utilizando el método de reducción normal)
                             </p>
-                            <a href="{{ route('ejemplo5') }}" class="btn btn-amarillo">Ir al ejemplo</a>
+                            <a  href="{{ route('ejemplos', ['id'=>5]) }}" class="btn btn-amarillo">Ir al ejemplo</a>
                         </div>
                     </div>
                 </div>
@@ -751,7 +751,7 @@
                                 Dada una expresión, se pide que realice la reducción de la expresión hasta llegar a su
                                 forma normal (utilizando el método de reducción perezosa)
                             </p>
-                            <a href="{{ route('ejemplo6') }}" class="btn btn-azul">Ir al ejemplo</a>
+                            <a  href="{{ route('ejemplos', ['id'=>6]) }}" class="btn btn-azul">Ir al ejemplo</a>
                         </div>
                     </div>
                 </div>
@@ -760,24 +760,40 @@
         </div>
 
         <div class="col-lg-12 mx-auto px-3 pt-5 desactivate" style="height: 100vh" id="practica">
-            <h4 class="color-blue">1.6 Practica</h4>
+            <div id="enunciado" class="px-4" style="margin-top: 10%">
+                <h4 class="color-blue">1.6 Practica</h4>
+                <p class="my-4">
+                    En esta sección se busca afianzar los conocimientos adquiridos por parte del usuario en este módulo, por
+                    ende, a continuación, se mostrarán una serie de ejercicios y preguntas con las cuales se busca poner a
+                    prueba dicho conocimiento adquirido.
+                </p>
+                <a href="#" id="start-exe" class="btn btn-amarillo d-block w-25 mx-auto">Empezar ejercicios</a>
+            </div>
 
-            <p class="my-4">
-                En esta sección se busca afianzar los conocimientos adquiridos por parte del usuario en este módulo, por
-                ende, a continuación, se mostrarán una serie de ejercicios y preguntas con las cuales se busca poner a
-                prueba dicho conocimiento adquirido.
-            </p>
-
-            <div id="ejercicio1" class="mt-5 p-3 bg-light">
+            <div id="ejercicio1" class="mt-2 p-3 bg-light desactivate">
                 <div class="enunciado">
+                    <h5 class="color-blue">Ejercicio 1</h5>
                     <P class="my-4">
                         Dada una función llamada <span style="color: blue; font-weight: bold">restaNum()</span>, que toma como parámetro dos números y retorna la resta entre ellos,
                         ¿Cómo se declararía dicha función?
                     </P>
-                    <a href="#" class="btn btn-amarillo">Ir al ejercicio</a>
+                    <a href="#" class="btn btn-amarillo realizar">Realizar</a>
+                    <a href="#" class="btn btn-azul">Siguiente</a>
+                </div>
+
+                <div class="desarrollo desactivate">
+                    <div class="row mx-auto">
+                        <div class="col-lg-6 col-md-6 col-12" id="code">
+                            <h5 class="color-yellow">Codigo</h5>
+                            <pre class="">
+                                <code class="language-haskell">
+                                    <span class="desactivate">dobleNumero: Z -> Z</span>
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
                 </div>
             </div>
-
         </div>
     </div>
 
@@ -826,6 +842,12 @@
                 $(id_content).toggle('explode')
             })
         });
+
+        $('#start-exe').on('click', (e) => {
+            e.preventDefault()
+            $('#ejercicio1').toggle('explode')
+            $('#enunciado').toggle('explode')
+        })
 
     </script>
 

@@ -37,6 +37,11 @@ aside ul li {
     text-align: center;
 }
 
+.reduccion{
+    background-color: #2d2d2d;
+    color: white;
+}
+
 .active{
     color: #f8c555;
 }

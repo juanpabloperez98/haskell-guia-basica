@@ -54,7 +54,6 @@
 
     @yield('content')
 
-
     <footer class="row">
         <div class="col-lg-12 mx-auto text-md-center" style="max-width: 1111px">
             <a href="#">Universidad Tecnologica de Pereira</a>
