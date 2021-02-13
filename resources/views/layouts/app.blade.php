@@ -64,6 +64,8 @@
     <script src="{{ asset('js/bootstrap/jquery-3.4.1.min.js') }}"></script>
     <script src="{{ asset('js/bootstrap/bootstrap.min.js') }}"></script>
     <script src="{{ asset('js/prism.js') }}"></script>
+    
+    {{-- SweetAlert --}}
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     @yield('scripts')
 </body>

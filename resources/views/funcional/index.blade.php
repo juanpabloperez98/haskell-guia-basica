@@ -759,8 +759,8 @@
 
         </div>
 
-        <div class="col-lg-12 mx-auto px-3 pt-5 desactivate" style="height: 100vh" id="practica">
-            <div id="enunciado" class="px-4" style="margin-top: 10%">
+        <div class="col-lg-12 mx-auto px-3 pt-5 desactivate" style="min-height: 100vh" id="practica">
+            <div id="enunciado" class="px-3" style="margin-top: 10%">
                 <h4 class="color-blue">1.6 Practica</h4>
                 <p class="my-4">
                     En esta sección se busca afianzar los conocimientos adquiridos por parte del usuario en este módulo, por
@@ -777,21 +777,91 @@
                         Dada una función llamada <span style="color: blue; font-weight: bold">restaNum()</span>, que toma como parámetro dos números y retorna la resta entre ellos,
                         ¿Cómo se declararía dicha función?
                     </P>
-                    <a href="#" class="btn btn-amarillo realizar">Realizar</a>
-                    <a href="#" class="btn btn-azul">Siguiente</a>
+                    <div class="botones desactivate">
+                        <a href="#" class="btn btn-amarillo realizar">Realizar</a>
+                        <a href="#" class="btn btn-azul">Siguiente</a>
+                    </div>
                 </div>
 
-                <div class="desarrollo desactivate">
+                <div class="desarrollo mb-5">
                     <div class="row mx-auto">
-                        <div class="col-lg-6 col-md-6 col-12" id="code">
-                            <h5 class="color-yellow">Codigo</h5>
-                            <pre class="">
-                                <code class="language-haskell">
-                                    <span class="desactivate">dobleNumero: Z -> Z</span>
-                                </code>
-                            </pre>
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <form action="" class="form-inline">
+                                <div class="form-check">
+                                    <div class="checkbox-Soft mx-auto">
+                                        <input class="form-check-input" type="radio" name="radiosexercise1" value="option1" id="radio1">
+                                        <label class="form-check-label" for="radio1"></label>
+                                    </div>
+                                    <pre class="line-numbers">
+                                        <code class="language-haskell">
+                                            dobleNumero :: Int -> Int;
+                                            dobleNumero x = x * 2
+                                        </code>
+                                    </pre>
+                                </div>
+                                <div class="form-check">
+                                    <div class="checkbox-Soft mx-auto">
+                                        <input class="form-check-input" type="radio" name="radiosexercise1" value="option2" id="radio2">
+                                        <label class="form-check-label" for="radio2"></label>
+                                    </div>
+                                    <pre class="line-numbers">
+                                        <code class="language-haskell">
+                                            dobleNumero :: Int -> Int;
+                                            dobleNumero x = x * 2
+                                        </code>
+                                    </pre>
+                                </div>
+                                <div class="form-check">
+                                    <div class="checkbox-Soft mx-auto">
+                                        <input class="form-check-input" type="radio" name="radiosexercise1" value="option3" id="radio3">
+                                        <label class="form-check-label" for="radio3"></label>
+                                    </div>
+                                    <pre class="line-numbers">
+                                        <code class="language-haskell">
+                                            dobleNumero :: Int -> Int;
+                                            dobleNumero x = x * 2
+                                        </code>
+                                    </pre>
+                                </div>
+                                <div class="form-check">
+                                    <div class="checkbox-Soft mx-auto">
+                                        <input class="form-check-input" type="radio" name="radiosexercise1" value="option4" id="radio4">
+                                        <label class="form-check-label" for="radio4"></label>
+                                    </div>
+                                    <pre class="line-numbers">
+                                        <code class="language-haskell">
+                                            dobleNumero :: Int -> Int;
+                                            dobleNumero x = x * 2
+                                        </code>
+                                    </pre>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <p class="question">
+                                ¿Cual crees que es la opcion correcta?
+                                <span>Seleccione una opcion y dar en continuar</span>
+                                <a href="#" data-btnindex="1" class="btn btn-amarillo mx-auto continue">Continuar</a>
+                            </p>
                         </div>
                     </div>
+                </div>
+            </div>
+
+            <div id="ejercicio2" class="mt-2 p-3 bg-light desactivate">
+                <div class="enunciado">
+                    <h5 class="color-blue">Ejercicio 2</h5>
+                    <P class="my-4">
+                        ¿En reducción de expresiones, el orden de reducción aplicativo consiste en reducir siempre el termino más interno de la expresión?
+                    </P>
+                    <div class="botones desactivate">
+                        <a href="#" class="btn btn-amarillo realizar">Realizar</a>
+                        <a href="#" class="btn btn-azul">Siguiente</a>
+                    </div>
+                </div>
+
+                <div class="desarrollo mb-5">
+                    
                 </div>
             </div>
         </div>
@@ -802,6 +872,7 @@
 
 @section('scripts')
     <script>
+
         // Changed color when is active
         $(".item").each(function(index) {
             $(this).on('click', (e) => {
@@ -848,6 +919,28 @@
             $('#ejercicio1').toggle('explode')
             $('#enunciado').toggle('explode')
         })
+
+        $('.continue').each(function(index) {
+            $(this).on('click', (e) => {
+                e.preventDefault()
+                var id = parseInt($(this).attr('data-btnindex'))
+                console.log($(this).attr('data-btnindex'))
+                var selected = $("input[type='radio'][name='radiosexercise1']:checked");
+                if (selected.length > 0) {
+                   selectedVal = selected.val();
+                   console.log(selectedVal)
+                   $('#ejercicio'+id).toggle('explode')
+                   $('#ejercicio'+(id+1)).toggle('explode')
+                }else{
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'No se ha escogido ninguna opcion',
+                        text: 'Por favor escoja alguna opción para poder continuar',
+                    })
+                }
+
+            })
+        });
 
     </script>
 
