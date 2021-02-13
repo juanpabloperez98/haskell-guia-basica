@@ -72,6 +72,10 @@ aside ul li {
     visibility: hidden;
 }
 
+.form-check input[type=checkbox]{
+    visibility: hidden;
+}
+
 .form-check .checkbox-Soft{
     position: relative;
     display: block !important;
@@ -100,12 +104,55 @@ aside ul li {
     color: #fcbc34;
 }
 
+
+.form-check .checkbox-slide{
+    display: inline-block;
+    position: relative;
+    width: 90px;
+    height: 30px;
+    border-radius: 25px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 4px 1px black;
+}
+
+
+.form-check .checkbox-slide label{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    background: linear-gradient(to right, white 0, #3e5eb1 100%);
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+	left: 0px;
+    transition: all 10s linear;
+    z-index: 1;
+}
+
+.form-check .checkbox-slide input[type="checkbox"]:checked + label{
+    left: auto;
+    right: 5px;
+}
+
+.p-question{
+    margin-left: 30px;
+    max-width: 330px;
+}
+
+.p-question span.false{
+    color: red;
+}
+.p-question span.true{
+    color: green;
+}
+
 .question{
     font-size: 25px;
     color: black;
     font-weight: bold;
     margin: 50% auto 20px auto;
-    transform: translateY(-140px);
+    transform: translateY(-100px);
 }
 
 .question span{

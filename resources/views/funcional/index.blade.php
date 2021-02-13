@@ -794,8 +794,8 @@
                                     </div>
                                     <pre class="line-numbers">
                                         <code class="language-haskell">
-                                            dobleNumero :: Int -> Int;
-                                            dobleNumero x = x * 2
+                                            restaNum :: Int -> Int;
+                                            restaNum x = x - y
                                         </code>
                                     </pre>
                                 </div>
@@ -806,8 +806,8 @@
                                     </div>
                                     <pre class="line-numbers">
                                         <code class="language-haskell">
-                                            dobleNumero :: Int -> Int;
-                                            dobleNumero x = x * 2
+                                            restaNum :: Int -> Int;
+                                            restaNum x y = x - y
                                         </code>
                                     </pre>
                                 </div>
@@ -818,8 +818,8 @@
                                     </div>
                                     <pre class="line-numbers">
                                         <code class="language-haskell">
-                                            dobleNumero :: Int -> Int;
-                                            dobleNumero x = x * 2
+                                            restaNum :: Int -> Int -> Int;
+                                            restaNum x y = x - y
                                         </code>
                                     </pre>
                                 </div>
@@ -830,8 +830,8 @@
                                     </div>
                                     <pre class="line-numbers">
                                         <code class="language-haskell">
-                                            dobleNumero :: Int -> Int;
-                                            dobleNumero x = x * 2
+                                            restaNum :: Int -> Int -> Int;
+                                            restaNum x = x - y
                                         </code>
                                     </pre>
                                 </div>
@@ -850,9 +850,9 @@
 
             <div id="ejercicio2" class="mt-2 p-3 bg-light desactivate">
                 <div class="enunciado">
-                    <h5 class="color-blue">Ejercicio 2</h5>
+                    <h5 class="color-yellow">Ejercicio 2</h5>
                     <P class="my-4">
-                        ¿En reducción de expresiones, el orden de reducción aplicativo consiste en reducir siempre el termino más interno de la expresión?
+                        A continuación, se mostrarán una serie de preguntas las cuales usted deberá indicar si es verdadero o falso la afirmación o pregunta que se le está planteando
                     </P>
                     <div class="botones desactivate">
                         <a href="#" class="btn btn-amarillo realizar">Realizar</a>
@@ -861,6 +861,55 @@
                 </div>
 
                 <div class="desarrollo mb-5">
+                    <div class="row mx-auto">
+                        <div class="col-lg-6">
+                            <form action="" class="form-inline">
+                                <div class="form-check">
+                                    <div class="checkbox-slide mx-auto">
+                                        <input class="form-check-input" type="checkbox" class="btontruefalse" value="option1" id="boton1">
+                                        <label class="form-check-label" for="boton1"></label>
+                                    </div>
+                                    <div class="p-question">
+                                        <p>
+                                            ¿En reducción de expresiones, el orden de reducción aplicativo consiste en reducir siempre el termino más interno de la expresión?
+                                        </p>
+                                        <span id="data-status1" class="false">Falso</span>
+                                    </div>
+                                </div>
+                                <div class="form-check mt-5">
+                                    <div class="checkbox-slide mx-auto">
+                                        <input class="form-check-input" type="checkbox" class="btontruefalse" value="option2" id="boton2">
+                                        <label class="form-check-label" for="boton2"></label>
+                                    </div>
+                                    <div class="p-question">
+                                        <p>
+                                            Si una función se declara de la forma que recibe los parámetros enteros y retorna como valor otro entero, ¿es estrictamente necesario que los valores pasados a la función sean enteros?
+                                        </p>
+                                        <span id="data-status2" class="false">Falso</span>
+                                    </div>
+                                </div> 
+                                <div class="form-check mt-5">
+                                    <div class="checkbox-slide mx-auto">
+                                        <input class="form-check-input" type="checkbox" class="btontruefalse" value="option3" id="boton3">
+                                        <label class="form-check-label" for="boton3"></label>
+                                    </div>
+                                    <div class="p-question">
+                                        <p>
+                                            ¿La reducción perezosa es una combinación entre la reducción aplicativo y la reducción normal?
+                                        </p>
+                                        <span id="data-status3" class="false">Falso</span>
+                                    </div>
+                                </div> 
+                            </form>
+                        </div>
+                        <div class="col-lg-6">
+                            <p class="question px-md-3">
+                                Para escoger entre verdadero y falso dar click a los botones azules
+                                <span>Cuando este seguro de sus respuestas dar en continuar</span>
+                                <a href="#" data-btnindex="2" class="btn btn-amarillo mx-auto continue">Continuar</a>
+                            </p>
+                        </div>
+                    </div>
                     
                 </div>
             </div>
@@ -922,21 +971,29 @@
 
         $('.continue').each(function(index) {
             $(this).on('click', (e) => {
-                e.preventDefault()
+                // e.preventDefault()
                 var id = parseInt($(this).attr('data-btnindex'))
-                console.log($(this).attr('data-btnindex'))
-                var selected = $("input[type='radio'][name='radiosexercise1']:checked");
-                if (selected.length > 0) {
-                   selectedVal = selected.val();
-                   console.log(selectedVal)
-                   $('#ejercicio'+id).toggle('explode')
-                   $('#ejercicio'+(id+1)).toggle('explode')
-                }else{
-                    Swal.fire({
-                        icon: 'error',
-                        title: 'No se ha escogido ninguna opcion',
-                        text: 'Por favor escoja alguna opción para poder continuar',
-                    })
+                switch(id){
+                    case 1:{
+                        var selected = $("input[type='radio'][name='radiosexercise1']:checked");
+                        if (selected.length > 0) {
+                            selectedVal = selected.val();
+                            console.log(selectedVal)
+                            $('#ejercicio'+id).toggle('explode')
+                            $('#ejercicio'+(id+1)).toggle('explode')
+                        }else{
+                            Swal.fire({
+                                icon: 'error',
+                                title: 'No se ha escogido ninguna opcion',
+                                text: 'Por favor escoja alguna opción para poder continuar',
+                            })
+                        }
+                        break
+                    }
+                    case 2:{
+
+                        break
+                    }
                 }
 
             })
