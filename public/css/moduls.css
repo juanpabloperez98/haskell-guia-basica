@@ -83,6 +83,11 @@ aside ul li {
     height: 30px;
 }
 
+.form-check .checkbox-Soft.order{
+    width: 100%;
+    height: 100%;
+}
+
 .form-check .checkbox-Soft label::before{
     content: '';
     background:transparent;
@@ -143,6 +148,7 @@ aside ul li {
 .p-question span.false{
     color: red;
 }
+
 .p-question span.true{
     color: green;
 }
@@ -160,6 +166,33 @@ aside ul li {
     color: #3e5eb1;
     font-weight: bold;
     display: block;
+}
+
+.question span#correct_ans{
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+    display: inline;
+
+}
+
+.question span.err{
+    color: red;
+}
+
+.question span.succ{
+    color: green;
+}
+
+.question.order{
+    margin: 0;
+    transform: none;
+}
+
+.p-order{
+    margin-left: 35px;
+    margin-top: -5px;
+    /* text-align: center; */
 }
 
 footer{

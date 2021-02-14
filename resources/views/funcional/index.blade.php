@@ -777,16 +777,12 @@
                         Dada una función llamada <span style="color: blue; font-weight: bold">restaNum()</span>, que toma como parámetro dos números y retorna la resta entre ellos,
                         ¿Cómo se declararía dicha función?
                     </P>
-                    <div class="botones desactivate">
-                        <a href="#" class="btn btn-amarillo realizar">Realizar</a>
-                        <a href="#" class="btn btn-azul">Siguiente</a>
-                    </div>
                 </div>
 
                 <div class="desarrollo mb-5">
                     <div class="row mx-auto">
                         <div class="col-lg-6 col-md-6 col-12">
-                            <form action="" class="form-inline">
+                            <form action="" class="form form-inline">
                                 <div class="form-check">
                                     <div class="checkbox-Soft mx-auto">
                                         <input class="form-check-input" type="radio" name="radiosexercise1" value="option1" id="radio1">
@@ -854,19 +850,15 @@
                     <P class="my-4">
                         A continuación, se mostrarán una serie de preguntas las cuales usted deberá indicar si es verdadero o falso la afirmación o pregunta que se le está planteando
                     </P>
-                    <div class="botones desactivate">
-                        <a href="#" class="btn btn-amarillo realizar">Realizar</a>
-                        <a href="#" class="btn btn-azul">Siguiente</a>
-                    </div>
                 </div>
 
                 <div class="desarrollo mb-5">
                     <div class="row mx-auto">
                         <div class="col-lg-6">
-                            <form action="" class="form-inline">
+                            <form action="" class="form form-inline">
                                 <div class="form-check">
                                     <div class="checkbox-slide mx-auto">
-                                        <input class="form-check-input" type="checkbox" class="btontruefalse" value="option1" id="boton1">
+                                        <input class="form-check-input btontruefalse" type="checkbox" data-indexbton="1" value="option1" id="boton1">
                                         <label class="form-check-label" for="boton1"></label>
                                     </div>
                                     <div class="p-question">
@@ -878,7 +870,7 @@
                                 </div>
                                 <div class="form-check mt-5">
                                     <div class="checkbox-slide mx-auto">
-                                        <input class="form-check-input" type="checkbox" class="btontruefalse" value="option2" id="boton2">
+                                        <input class="form-check-input btontruefalse" type="checkbox" data-indexbton="2" value="option2" id="boton2">
                                         <label class="form-check-label" for="boton2"></label>
                                     </div>
                                     <div class="p-question">
@@ -890,7 +882,7 @@
                                 </div> 
                                 <div class="form-check mt-5">
                                     <div class="checkbox-slide mx-auto">
-                                        <input class="form-check-input" type="checkbox" class="btontruefalse" value="option3" id="boton3">
+                                        <input class="form-check-input btontruefalse" type="checkbox" data-indexbton="3" value="option3" id="boton3">
                                         <label class="form-check-label" for="boton3"></label>
                                     </div>
                                     <div class="p-question">
@@ -913,6 +905,93 @@
                     
                 </div>
             </div>
+
+            <div id="ejercicio3" class="mt-2 p-3 bg-light desactivate">
+                <div class="enunciado">
+                    <h5 class="color-blue">Ejercicio 3</h5>
+                    <P class="my-4">
+                        Dada la siguiente reducción indiqué que tipo de reducción es, si es reducción aplicativa, reducción normal o reducción perezosa. 
+                    </P>
+                </div>
+
+                <div class="desarrollo mb-5">
+                    <div class="row mx-auto">
+                        <div class="col-lg-4">
+                            <h5 class="color-yellow">Código</h5>
+                                <pre class="line-numbers">
+                                    <code class="language-haskell">
+                            dobleNumero: Z -> Z
+                            dobleNumero: (x) -> x * 2
+                                    </code>
+                                </pre>
+                        </div>
+                        <div class="col-lg-4">
+                            <h5 class="color-blue">Reducción</h5>
+                                <pre class="line-numbers">
+                                    <code class="language-haskell">
+                            dobleNumero: Z -> Z
+                            dobleNumero: (x) -> x * 2
+                                    </code>
+                                </pre>
+                        </div>
+                        <div class="col-lg-4">
+                            <h6 class="text-center font-weight-bold">¿Que tipo de reducción es?</h6>
+                            <form action="" class="form">
+                                <div class="form-check">
+                                    <div class="checkbox-Soft order mx-auto">
+                                        <input class="form-check-input" type="radio" name="radiosexercise2" value="option1" id="secondradio1">
+                                        <label class="form-check-label" for="secondradio1"></label>
+                                        <p class="p-order">
+                                            Reducción Aplicativo
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="form-check">
+                                    <div class="checkbox-Soft order mx-auto">
+                                        <input class="form-check-input" type="radio" name="radiosexercise2" value="option2" id="secondradio2">
+                                        <label class="form-check-label" for="secondradio2"></label>
+                                        <p class="p-order">
+                                            Reducción Normal
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="form-check">
+                                    <div class="checkbox-Soft order mx-auto">
+                                        <input class="form-check-input" type="radio" name="radiosexercise2" value="option3" id="secondradio3">
+                                        <label class="form-check-label" for="secondradio3"></label>
+                                        <p class="p-order">
+                                            Reducción Perezosa
+                                        </p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-lg-12">
+                            <p class="question order">
+                                ¿Cual crees que es la opcion correcta?
+                                <span>Seleccione una opcion y dar en continuar</span>
+                                <a href="#" data-btnindex="3" class="btn btn-amarillo mx-auto continue">Continuar</a>
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div id="result" class="mt-2 p-3 bg-light desactivate">
+                <div class="enunciado text-center">
+                    <h5 class="color-blue">Resultados</h5>
+                    <p class="question order w-50 mt-md-5 text-left mx-auto">
+                        Ha terminado la parte practica de este módulo, usted ha respondido correctamente <span id="correct_ans"></span>/5 preguntas
+                        <span id="recomendation">Seleccione una opcion y dar en continuar</span>
+                        <a href="#" data-btnindex="3" class="btn btn-amarillo mt-md-3">Pasar al siguiente módulo</a>
+                        <a href="#" data-btnindex="3" class="btn btn-azul mt-md-3">Reiniciar</a>
+                    </p>
+                    <span></span>
+                </div>
+
+               
+            </div>
         </div>
     </div>
 
@@ -921,6 +1000,56 @@
 
 @section('scripts')
     <script>
+        let resultados = {
+            1 : {
+                "respuest_correct" : "option3",
+                "respuest_selected" : ""
+            },
+            2: {
+                "question1" : {
+                    "respuest_correct" : "true",
+                    "respuest_selected" : "false"
+                },
+                "question2" : {
+                    "respuest_correct" : "true",
+                    "respuest_selected" : "false"
+                },
+                "question3" : {
+                    "respuest_correct" : "false",
+                    "respuest_selected" : "false"
+                }
+            },
+            3 : {
+                "respuest_correct" : "option1",
+                "respuest_selected" : ""
+            }
+        }
+
+
+        var getNumResults = () => {
+            var total = 0    
+            for(var key in resultados){
+                var index = key.toString(),
+                    obj = resultados[index] 
+                if(key != 2){
+                    if(obj.respuest_correct == obj.respuest_selected){
+                        total += 1
+                    }
+                }else{
+                    for(var key2 in obj){
+                        if(obj[key2].respuest_correct == obj[key2].respuest_selected){
+                            total += 1
+                        }
+                    }
+                }
+            }
+            return total
+        }
+
+        //Reset Forms when script is loaded
+        $('.form').each(function(index) {
+            $(this)[0].reset()
+        });
 
         // Changed color when is active
         $(".item").each(function(index) {
@@ -978,7 +1107,7 @@
                         var selected = $("input[type='radio'][name='radiosexercise1']:checked");
                         if (selected.length > 0) {
                             selectedVal = selected.val();
-                            console.log(selectedVal)
+                            resultados[1].respuest_selected = selectedVal
                             $('#ejercicio'+id).toggle('explode')
                             $('#ejercicio'+(id+1)).toggle('explode')
                         }else{
@@ -991,14 +1120,57 @@
                         break
                     }
                     case 2:{
-
+                        $('#ejercicio'+id).toggle('explode')
+                        $('#ejercicio'+(id+1)).toggle('explode')
+                        break
+                    }
+                    case 3:{
+                        var selected = $("input[type='radio'][name='radiosexercise2']:checked");
+                        if (selected.length > 0) {
+                            selectedVal = selected.val();
+                            resultados[3].respuest_selected = selectedVal
+                            $('#ejercicio'+id).toggle('explode')
+                            $('#result').toggle('explode')
+                            let num_total = getNumResults()
+                            $('#correct_ans').text(num_total)
+                            if(num_total > 3){
+                                $('#recomendation').addClass('succ')
+                                $('#recomendation').html('Felicidades ha acertado en la mayoría de preguntas<br>Puede pasar al siguiente módulo')
+                            }else{
+                                $('#recomendation').addClass('err')
+                                $('#recomendation').html('Lo sentimos no ha acertado en la mayoría de preguntas<br>Le recomendamos volver a practicar el módulo')
+                            }
+                        }else{
+                            Swal.fire({
+                                icon: 'error',
+                                title: 'No se ha escogido ninguna opcion',
+                                text: 'Por favor escoja alguna opción para poder continuar',
+                            })
+                        }
                         break
                     }
                 }
-
             })
         });
 
+        $('.btontruefalse').each(function(index) {
+            $(this).change(() => {
+                var index_btn = parseInt($(this).attr('data-indexbton')),
+                    datastatus = '#data-status'+index_btn,
+                    result_index = "question"+index_btn
+                if(this.checked){
+                    resultados[2][result_index].respuest_selected = "true"
+                    $(datastatus).text('Verdadero')
+                    $(datastatus).removeClass('false')
+                    $(datastatus).addClass('true')
+                }else{
+                    resultados[2][result_index].respuest_selected = "false"
+                    $(datastatus).text('Falso')
+                    $(datastatus).removeClass('true')
+                    $(datastatus).addClass('false')
+                }
+            })
+        });
     </script>
 
 @endsection

@@ -34,13 +34,13 @@
                     <form action="" data-form="1" id="form1" class="formulario desactivate">
                         <input type="text" class="form-control" id="input1" placeholder="Ingresa el valor de X">
                         <button type="submit" class="btn btn-amarillo ml-1">Siguiente
-                            <img class="ml-1" style="width: 20px" src="{{ asset('images/icons/run.png') }}" alt="run logo">
+                            <img class="ml-1" style="width: 20px" src="{{ asset('images/icons/next.png') }}" alt="run logo">
                         </button>
                     </form>
 
                     <div class="botones">
                         <a href="#" data-btnIdentity="1" class="btn btn-azul probar">
-                            Probar <img class="ml-1" style="width: 20px" src="{{ asset('images/icons/run.png') }}"
+                            Probar <img class="ml-1" style="width: 30px" src="{{ asset('images/icons/run.png') }}"
                                 alt="run logo">
                         </a>
                     </div>
@@ -87,13 +87,13 @@
                     <form action="" data-form="2" id="form2" class="formulario desactivate">
                         <input type="text" class="form-control" id="input2" placeholder="Ingrese numero">
                         <button type="submit" class="btn btn-amarillo ml-1">Siguiente
-                            <img class="ml-1" style="width: 20px" src="{{ asset('images/icons/run.png') }}" alt="run logo">
+                            <img class="ml-1" style="width: 20px" src="{{ asset('images/icons/next.png') }}" alt="run logo">
                         </button>
                     </form>
 
                     <div class="botones">
                         <a href="#" data-btnIdentity="2" class="btn btn-azul probar">
-                            Probar <img class="ml-1" style="width: 20px" src="{{ asset('images/icons/run.png') }}"
+                            Probar <img class="ml-1" style="width: 30px" src="{{ asset('images/icons/run.png') }}"
                                 alt="run logo">
                         </a>
                     </div>
@@ -135,13 +135,13 @@
                     <form action="" data-form="3" id="form3" class="formulario desactivate">
                         <input type="text" class="form-control" id="input3" placeholder="Ingrese numero">
                         <button type="submit" class="btn btn-amarillo ml-1">Siguiente
-                            <img class="ml-1" style="width: 20px" src="{{ asset('images/icons/run.png') }}" alt="run logo">
+                            <img class="ml-1" style="width: 20px" src="{{ asset('images/icons/next.png') }}" alt="run logo">
                         </button>
                     </form>
 
                     <div class="botones">
                         <a href="#" data-btnIdentity="3" class="btn btn-azul probar">
-                            Probar <img class="ml-1" style="width: 20px" src="{{ asset('images/icons/run.png') }}"
+                            Probar <img class="ml-1" style="width: 30px" src="{{ asset('images/icons/run.png') }}"
                                 alt="run logo">
                         </a>
                     </div>
@@ -174,7 +174,7 @@
 
                     <div class="botones">
                         <a href="#" data-btnIdentity="4" class="btn btn-azul probar reduccion">
-                            Ver Reducción <img class="ml-1" style="width: 20px" src="{{ asset('images/icons/run.png') }}"
+                            Ver Reducción <img class="ml-1" style="width: 30px" src="{{ asset('images/icons/run.png') }}"
                                 alt="run logo">
                         </a>
                     </div>
@@ -232,7 +232,7 @@
 
                     <div class="botones">
                         <a href="#" data-btnIdentity="5" class="btn btn-azul probar reduccion">
-                            Ver Reducción <img class="ml-1" style="width: 20px" src="{{ asset('images/icons/run.png') }}"
+                            Ver Reducción <img class="ml-1" style="width: 30px" src="{{ asset('images/icons/run.png') }}"
                                 alt="run logo">
                         </a>
                     </div>
@@ -291,7 +291,7 @@
 
                     <div class="botones">
                         <a href="#" data-btnIdentity="6" class="btn btn-azul probar reduccion">
-                            Ver Reducción <img class="ml-1" style="width: 20px" src="{{ asset('images/icons/run.png') }}"
+                            Ver Reducción <img class="ml-1" style="width: 30px" src="{{ asset('images/icons/run.png') }}"
                                 alt="run logo">
                         </a>
                     </div>

@@ -45,6 +45,12 @@
                                     Volver
                                 </a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">
+                                    Siguiente
+                                    <img src="{{ asset('images/icons/arrow-next.png') }}" class="ml-1" style="width: 15px" alt="arrow-icon">
+                                </a>
+                            </li>
                         @endif
                     @endif
                 </ul>
