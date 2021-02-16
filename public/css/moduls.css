@@ -5,7 +5,7 @@ aside {
     position: fixed;
 }
 
-aside a{
+aside a {
     color: #3e5eb1;
 }
 
@@ -32,85 +32,84 @@ aside ul li {
     margin-left: 23%;
 }
 
-.section-info-moduls h4{
+.section-info-moduls h4 {
     font-size: 35px;
     text-align: center;
 }
 
-.reduccion{
+.reduccion {
     background-color: #2d2d2d;
     color: white;
 }
 
-.active{
+.active {
     color: #f8c555;
 }
 
-.btn-amarillo{
+.btn-amarillo {
     background-color: #f8c555;
     color: white;
 }
 
-.btn-amarillo:hover{
+.btn-amarillo:hover {
     background-color: #fcbc34;
     color: white;
     font-weight: bold;
 }
 
-.btn-azul{
+.btn-azul {
     background-color: #3e5eb1;
     color: white;
 }
 
-.btn-azul:hover{
+.btn-azul:hover {
     background-color: #3e5eb1;
     color: white;
     font-weight: bold;
 }
 
-.form-check input[type=radio]{
+.form-check input[type=radio] {
     visibility: hidden;
 }
 
-.form-check input[type=checkbox]{
+.form-check input[type=checkbox] {
     visibility: hidden;
 }
 
-.form-check .checkbox-Soft{
+.form-check .checkbox-Soft {
     position: relative;
     display: block !important;
     width: 60px;
     height: 30px;
 }
 
-.form-check .checkbox-Soft.order{
+.form-check .checkbox-Soft.order {
     width: 100%;
     height: 100%;
 }
 
-.form-check .checkbox-Soft label::before{
+.form-check .checkbox-Soft label::before {
     content: '';
-    background:transparent;
+    background: transparent;
     border: 2px solid #3e5eb1;
     border-radius: 25px;
     display: inline-block;
     height: 25px;
     width: 25px;
-    text-align:center;
-    vertical-align:middle;
+    text-align: center;
+    vertical-align: middle;
     cursor: pointer;
     position: absolute;
 }
 
-.form-check .checkbox-Soft input[type=radio]:checked + label::before{
+.form-check .checkbox-Soft input[type=radio]:checked+label::before {
     content: '✔';
     font-size: 15px;
-    font-family:'Times New Roman';
+    font-family: 'Times New Roman';
     color: #fcbc34;
 }
 
-
-.form-check .checkbox-slide{
+.form-check .checkbox-slide {
     display: inline-block;
     position: relative;
     width: 90px;
@@ -120,8 +119,7 @@ aside ul li {
     box-shadow: 2px 2px 4px 1px black;
 }
 
-
-.form-check .checkbox-slide label{
+.form-check .checkbox-slide label {
     display: block;
     width: 30px;
     height: 30px;
@@ -130,30 +128,30 @@ aside ul li {
     cursor: pointer;
     position: absolute;
     top: 0px;
-	left: 0px;
+    left: 0px;
     transition: all 10s linear;
     z-index: 1;
 }
 
-.form-check .checkbox-slide input[type="checkbox"]:checked + label{
+.form-check .checkbox-slide input[type="checkbox"]:checked+label {
     left: auto;
     right: 5px;
 }
 
-.p-question{
+.p-question {
     margin-left: 30px;
     max-width: 330px;
 }
 
-.p-question span.false{
+.p-question span.false {
     color: red;
 }
 
-.p-question span.true{
+.p-question span.true {
     color: green;
 }
 
-.question{
+.question {
     font-size: 25px;
     color: black;
     font-weight: bold;
@@ -161,41 +159,50 @@ aside ul li {
     transform: translateY(-100px);
 }
 
-.question span{
+.question span {
     font-size: 15px;
     color: #3e5eb1;
     font-weight: bold;
     display: block;
 }
 
-.question span#correct_ans{
+.question span#correct_ans {
     font-size: 25px;
     color: black;
     font-weight: bold;
     display: inline;
-
 }
 
-.question span.err{
+.question span.err {
     color: red;
 }
 
-.question span.succ{
+.question span.succ {
     color: green;
 }
 
-.question.order{
+.question.order {
     margin: 0;
     transform: none;
 }
 
-.p-order{
+.p-order {
     margin-left: 35px;
     margin-top: -5px;
     /* text-align: center; */
 }
 
-footer{
+.ejemplocuadro {
+    /* display: inline-block; */
+    width: 20px;
+    /* background-color: rgba(128, 128, 128, .6); */
+    height: 20px;
+    position: absolute;
+    top: 50px;
+    left: 5px
+}
+
+footer {
     width: 77%;
     margin-left: 23% !important;
 }

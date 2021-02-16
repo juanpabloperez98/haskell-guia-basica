@@ -25,6 +25,9 @@
                     dobleNumero: (x) -> x * 2
                             </code>
                         </pre>
+                        <div class="desactivate ejemplocuadro" id="ejemplocuadro1">
+                            <img src="{{ asset('images/icons/arrow-right-white.png') }}" style="width: 100%" alt="flecha izquierda">
+                        </div>
 
                     <div class="bg-light p-2 desactivate" id="resultado1" style="min-height: 60px;">
                         <h6 class="text-center font-weight-bold">Resultado</h6>
@@ -87,6 +90,9 @@
                                     print("La suma del doble del numero mas el numeros es: " ++ show suma)
                             </code>
                         </pre>
+                        <div class="desactivate ejemplocuadro" id="ejemplocuadro2">
+                            <img src="{{ asset('images/icons/arrow-right-white.png') }}" style="width: 100%" alt="flecha izquierda">
+                        </div>
 
                     <div class="bg-light p-2 desactivate" id="resultado2" style="min-height: 60px;">
                         <h6 class="text-center font-weight-bold">Resultado</h6>
@@ -135,16 +141,19 @@
                 <div class="col-lg-6 p-0">
                     <h5 class="color-yellow">Codigo</h5>
                     <pre class="line-numbers">
-                            <code class="language-haskell">
-                                ex2 :: IO ()
-                                ex2 = do
-                                    putStrLn ("Ingrese numero")
-                                    line1 <- getLine
-                                    let num = (read line1 :: Int)
-                                    let suma = sum[1..num]
-                                    print("La suma de los numeros comprendidos es: " ++ show suma)
-                            </code>
-                        </pre>
+                        <code class="language-haskell">
+                            ex2 :: IO ()
+                            ex2 = do
+                                putStrLn ("Ingrese numero")
+                                line1 <- getLine
+                                let num = (read line1 :: Int)
+                                let suma = sum[1..num]
+                                print("La suma de los numeros comprendidos es: " ++ show suma)
+                        </code>
+                    </pre>
+                    <div class="desactivate ejemplocuadro" id="ejemplocuadro3">
+                        <img src="{{ asset('images/icons/arrow-right-white.png') }}" style="width: 100%" alt="flecha izquierda">
+                    </div>
 
                     <div class="bg-light p-2 desactivate" id="resultado3" style="min-height: 60px;">
                         <h6 class="text-center font-weight-bold">Resultado</h6>

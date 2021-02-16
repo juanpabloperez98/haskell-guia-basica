@@ -170,8 +170,9 @@ $(".formulario").each(function (index) {
         var id_resultado = parseInt($(this).attr('data-form')),
             input = '#input' + id_resultado,
             explain = '#explain' + id_resultado,
-            resultp = '#resultp' + id_resultado
-        id_resultado_content = '#resultado' + id_resultado,
+            resultp = '#resultp' + id_resultado,
+            ejemplocuadro = '#ejemplocuadro' + id_resultado,
+            id_resultado_content = '#resultado' + id_resultado,
             dato = parseInt($(input).val())
 
         var validation = !isNaN(dato) ? true : false
@@ -181,6 +182,7 @@ $(".formulario").each(function (index) {
             $(resultp).text(cal(id_resultado, dato)) //Set value to resultp id
             $(explain).toggle('explode')
             $(this).toggle('explode')
+            $(ejemplocuadro).toggle('explode')
         } else {
             Swal.fire({
                 icon: 'error',
@@ -196,7 +198,7 @@ $(".formulario").each(function (index) {
 
 for (let i = 1; i <= 6; i++) {
     let linea = '#explain_code' + i,
-        reference = 'ejercicio'+i,
+        reference = 'ejercicio' + i,
         id_ = pasoapaso[reference]['line_actual'],
         msg = pasoapaso[reference][id_]
     $(linea).text(msg)
@@ -210,25 +212,46 @@ $('.paso-right').each(function (index) {
         e.preventDefault()
         if (pasoapaso[id_]['line_actual'] != pasoapaso[id_]['total_lines']) {
             pasoapaso[id_]['line_actual'] += 1
+            var i = pasoapaso[id_]['line_actual'],
+                msg = pasoapaso[id_][i],
+                linea = '#explain_code' + num_exercise,
+                valor = $('#ejemplocuadro' + num_exercise).css('top'),
+                lon = (valor.length - 2),
+                num = ''
+            for (let i = 0; i < lon; i++) {
+                num += valor[i]
+            }
+            num = parseFloat(num)
+            console.log(num)
+            num += 23.5
+            $(linea).text(msg)
+            $('#ejemplocuadro' + num_exercise).css('top', num)
         }
-        var i = pasoapaso[id_]['line_actual'],
-            msg = pasoapaso[id_][i],
-            linea = '#explain_code' + num_exercise
-        $(linea).text(msg)
     })
 })
 
-$('.paso-left').each(function (index){
+$('.paso-left').each(function (index) {
     var num_exercise = parseInt($(this).attr('data-exercise')),
-        id_ = 'ejercicio'+num_exercise
-        $(this).on('click',(e)=>{
-            e.preventDefault()
-            if(pasoapaso[id_]['line_actual'] != 1){
-                pasoapaso[id_]['line_actual'] -= 1
-            }
+        id_ = 'ejercicio' + num_exercise
+    $(this).on('click', (e) => {
+        e.preventDefault()
+        if (pasoapaso[id_]['line_actual'] != 1) {
+            pasoapaso[id_]['line_actual'] -= 1
             var i = pasoapaso[id_]['line_actual'],
                 msg = pasoapaso[id_][i],
-                linea = '#explain_code'+num_exercise 
+                linea = '#explain_code' + num_exercise,
+                valor = $('#ejemplocuadro' + num_exercise).css('top'),
+                lon = (valor.length - 2),
+                num = ''
+            for (let i = 0; i < lon; i++) {
+                num += valor[i]
+            }
+            num = parseFloat(num)
+            console.log(num)
+            num -= 23.5
             $(linea).text(msg)
-        })
+            $('#ejemplocuadro' + num_exercise).css('top', num)
+        }
+
+    })
 })
