@@ -48,7 +48,17 @@
 
                 <div class="col-lg-6 p-0 text-center desactivate" id="explain1">
                     <h5 class="color-blue">Explicación</h5>
-                    <div class="bg-light p-2" style="width: 300px; height: 80px; margin: auto"></div>
+                    <div class="bg-light p-2" style="width: 400px; min-height: 80px; margin: auto">
+                        <p id="explain_code1" class="text-left p-2"></p>
+                    </div>
+                    <div class="botonespaso mt-md-2">
+                        <a href="#" data-exercise="1" class="btn btn-azul paso-left">
+                            <img src="{{ asset('/images/icons/left-arrow.png') }}" alt="left-arrow">
+                        </a>
+                        <a href="#" data-exercise="1" class="btn btn-azul paso-right">
+                            <img src="{{ asset('/images/icons/right-arrow.png') }}" alt="right-arrow">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -67,7 +77,6 @@
                             <code class="language-haskell">
                                 dobleNumero :: Int -> Int;
                                 dobleNumero x = x * 2
-                            
                                 ex :: IO ()
                                 ex = do
                                     putStrLn ("Ingrese numero")
@@ -101,7 +110,17 @@
 
                 <div class="col-lg-6 p-0 text-center desactivate" id="explain2">
                     <h5 class="color-blue">Explicación</h5>
-                    <div class="bg-light p-2" style="width: 300px; height: 80px; margin: auto"></div>
+                    <div class="bg-light p-2" style="width: 400px; min-height: 80px; margin: auto">
+                        <p id="explain_code2" class="text-left p-2"></p>
+                    </div>
+                    <div class="botonespaso mt-md-2">
+                        <a href="#" data-exercise="2" class="btn btn-azul paso-left">
+                            <img src="{{ asset('/images/icons/left-arrow.png') }}" alt="left-arrow">
+                        </a>
+                        <a href="#" data-exercise="2" class="btn btn-azul paso-right">
+                            <img src="{{ asset('/images/icons/right-arrow.png') }}" alt="right-arrow">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -149,7 +168,17 @@
 
                 <div class="col-lg-6 p-0 text-center desactivate" id="explain3">
                     <h5 class="color-blue">Explicación</h5>
-                    <div class="bg-light p-2" style="width: 300px; height: 80px; margin: auto"></div>
+                    <div class="bg-light p-2" style="width: 400px; min-height: 80px; margin: auto">
+                        <p id="explain_code3" class="text-left p-2"></p>
+                    </div>
+                    <div class="botonespaso mt-md-2">
+                        <a href="#" data-exercise="3" class="btn btn-azul paso-left">
+                            <img src="{{ asset('/images/icons/left-arrow.png') }}" alt="left-arrow">
+                        </a>
+                        <a href="#" data-exercise="3" class="btn btn-azul paso-right">
+                            <img src="{{ asset('/images/icons/right-arrow.png') }}" alt="right-arrow">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -203,7 +232,17 @@
 
                 <div class="col-lg-4 col-md-4 p-0 text-center desactivate" id="explain4">
                     <h5 class="color-yellow">Explicación</h5>
-                    <div class="bg-light p-2" style="width: 300px; height: 80px; margin: auto"></div>
+                    <div class="bg-light p-2" style="width: 300px; min-height: 80px; margin: auto">
+                        <p id="explain_code4" class="text-left p-2"></p>
+                    </div>
+                    <div class="botonespaso mt-md-2">
+                        <a href="#" data-exercise="4" class="btn btn-azul paso-left">
+                            <img src="{{ asset('/images/icons/left-arrow.png') }}" alt="left-arrow">
+                        </a>
+                        <a href="#" data-exercise="4" class="btn btn-azul paso-right">
+                            <img src="{{ asset('/images/icons/right-arrow.png') }}" alt="right-arrow">
+                        </a>
+                    </div>
                 </div>
             </div>
 
@@ -265,7 +304,17 @@
 
                 <div class="col-lg-4 col-md-4 col-12 p-0 text-center desactivate" id="explain5">
                     <h5 class="color-blue">Explicación</h5>
-                    <div class="bg-light p-2" style="width: 300px; height: 80px; margin: auto"></div>
+                    <div class="bg-light p-2" style="width: 300px; min-height: 80px; margin: auto">
+                        <p id="explain_code5" class="text-left p-2"></p>
+                    </div>
+                    <div class="botonespaso mt-md-2">
+                        <a href="#" data-exercise="5" class="btn btn-azul paso-left">
+                            <img src="{{ asset('/images/icons/left-arrow.png') }}" alt="left-arrow">
+                        </a>
+                        <a href="#" data-exercise="5" class="btn btn-azul paso-right">
+                            <img src="{{ asset('/images/icons/right-arrow.png') }}" alt="right-arrow">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -326,7 +375,17 @@
 
                 <div class="col-lg-4 p-0 text-center desactivate" id="explain6">
                     <h5 class="color-blue">Explicación</h5>
-                    <div class="bg-light p-2" style="width: 300px; height: 80px; margin: auto"></div>
+                    <div class="bg-light p-2" style="width: 300px; min-height: 80px; margin: auto">
+                        <p id="explain_code6" class="text-left p-2"></p>
+                    </div>
+                    <div class="botonespaso mt-md-2">
+                        <a href="#" data-exercise="6" class="btn btn-azul paso-left">
+                            <img src="{{ asset('/images/icons/left-arrow.png') }}" alt="left-arrow">
+                        </a>
+                        <a href="#" data-exercise="6" class="btn btn-azul paso-right">
+                            <img src="{{ asset('/images/icons/right-arrow.png') }}" alt="right-arrow">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
