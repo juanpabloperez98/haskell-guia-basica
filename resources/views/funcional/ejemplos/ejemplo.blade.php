@@ -91,7 +91,7 @@
                             </code>
                         </pre>
                         <div class="desactivate ejemplocuadro" id="ejemplocuadro2">
-                            <img src="{{ asset('images/icons/arrow-right-white.png') }}" style="width: 100%" alt="flecha izquierda">
+                            <img src="{{ asset('images/icons/arrow-right-blue.png') }}" style="width: 100%" alt="flecha izquierda">
                         </div>
 
                     <div class="bg-light p-2 desactivate" id="resultado2" style="min-height: 60px;">
@@ -152,7 +152,7 @@
                         </code>
                     </pre>
                     <div class="desactivate ejemplocuadro" id="ejemplocuadro3">
-                        <img src="{{ asset('images/icons/arrow-right-white.png') }}" style="width: 100%" alt="flecha izquierda">
+                        <img src="{{ asset('images/icons/arrow-right-yellow.png') }}" style="width: 100%" alt="flecha izquierda">
                     </div>
 
                     <div class="bg-light p-2 desactivate" id="resultado3" style="min-height: 60px;">
