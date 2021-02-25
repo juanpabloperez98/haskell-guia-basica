@@ -36,14 +36,14 @@ Route::prefix('programacion-funcional/')->group(function () {
 
 Route::prefix('introduccion-haskell/')->group(function () {
     Route::get('index/', function () {
-        return view('introhaskell.index', [
+        return view('intro.index', [
             'page' => 'modul'
         ]);
     })->name('introhaskell');
 
     Route::get('ejemplos/{id}', function () {
         $id = \Request::route('id');
-        return view('introhaskell.ejemplos.ejemplo', [
+        return view('intro.ejemplos.ejemplo', [
             'page' => 'ejemplo',
             'identity' => $id,
             'dad_page' => 'introduccion-haskell'
