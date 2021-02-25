@@ -76,10 +76,10 @@
             </p>
 
             <pre class="line-numbers">
-                                                                                                                                                                                                                                                                                                            <code class="language-haskell">
-                                                                                                                                                                                                                                                                                                sucesor(1) -> 2
-                                                                                                                                                                                                                                                                                                            </code>
-                                                                                                                                                                                                                                                                                                        </pre>
+                            <code class="language-haskell">
+                sucesor(1) -> 2
+                            </code>
+                        </pre>
 
             <p class="my-4">
                 Es de esta manera que se denota que el valor de la función sucesor para el valor 1 es igual a 2. Cuando la

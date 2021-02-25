@@ -90,7 +90,7 @@
                                         <div class="content-img-slide"><img
                                                 src="{{ asset('images/queesHaskell/logo_haskell.png') }}" alt="imagen2">
                                         </div>
-                                        <h3><a href="#">¿Qué es haskell?... introducción</a></h3>
+                                        <h3><a href="{{ route('introhaskell') }}">¿Qué es haskell?... introducción</a></h3>
                                     </div>
                                     <div class="col-lg-4">
                                         <div class="content-img-slide"><img

@@ -82,7 +82,13 @@ $('.cerrar').each(function(index) {
         e.preventDefault()
         $(this).removeClass('btn')
         let id = $(this).attr('id')
-        id = id[id.length - 1]
+        id_ = id[id.length - 2]
+        id_ = parseInt(id_)
+        if(!isNaN(id_)){
+            id = id[id.length - 2] + id[id.length - 1]
+        }else{
+            id = id[id.length - 1]
+        }   
         id_content = '#result-code' + id
         id = '#probar' + id
         $(id).toggle('explode')

@@ -28,7 +28,25 @@ Route::prefix('programacion-funcional/')->group(function () {
         $id = \Request::route('id');
         return view('funcional.ejemplos.ejemplo', [
             'page' => 'ejemplo',
-            'identity' => $id
+            'identity' => $id,
+            'dad_page' => 'programacion-funcional'
         ]);
     })->name('ejemplos');
+});
+
+Route::prefix('introduccion-haskell/')->group(function () {
+    Route::get('index/', function () {
+        return view('introhaskell.index', [
+            'page' => 'modul'
+        ]);
+    })->name('introhaskell');
+
+    Route::get('ejemplos/{id}', function () {
+        $id = \Request::route('id');
+        return view('introhaskell.ejemplos.ejemplo', [
+            'page' => 'ejemplo',
+            'identity' => $id,
+            'dad_page' => 'introduccion-haskell'
+        ]);
+    })->name('ejemplos2');
 });

@@ -33,10 +33,21 @@
                     @else
                         @if ($page == 'ejemplo')
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="{{ route('funcional') }}">
-                                    <img src="{{ asset('images/icons/arrow-back.png') }}" class="mr-1" style="width: 15px" alt="arrow-icon">
-                                    Volver
-                                </a>
+                                @switch($dad_page)
+                                    @case('programacion-funcional')
+                                        <a class="nav-link active" aria-current="page" href="{{ route('funcional') }}">
+                                            <img src="{{ asset('images/icons/arrow-back.png') }}" class="mr-1" style="width: 15px" alt="arrow-icon">
+                                            Volver
+                                        </a>
+                                        @break
+                                    @case('introduccion-haskell')
+                                        <a class="nav-link active" aria-current="page" href="{{ route('introhaskell') }}">
+                                            <img src="{{ asset('images/icons/arrow-back.png') }}" class="mr-1" style="width: 15px" alt="arrow-icon">
+                                            Volver
+                                        </a>
+                                        @break
+                                    @default
+                                @endswitch
                             </li>
                         @else
                             <li class="nav-item">

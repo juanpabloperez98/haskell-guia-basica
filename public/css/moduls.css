@@ -3,6 +3,7 @@ aside {
     width: 23%;
     height: 100vh;
     position: fixed;
+    overflow-y: scroll;
 }
 
 aside a {
@@ -202,7 +203,22 @@ aside ul li {
     left: 3px;
 }
 
+table{
+    text-align: center;
+}
+
+table thead{
+    background-color: #f8c555;
+    color: white;
+}
+
+.content-line{
+    border: 1px solid black;
+    margin: 40px auto;
+}
+
 footer {
     width: 77%;
     margin-left: 23% !important;
 }
+
