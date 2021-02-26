@@ -1847,7 +1847,7 @@
                                 </div>
                             </form>
                         </div>
-                        <div class="col-lg-12">
+                        <div class="col-lg-12 mt-md-5">
                             <p class="question order">
                                 ¿Cual crees que es la opcion correcta?
                                 <span>Seleccione una opcion y dar en continuar</span>
