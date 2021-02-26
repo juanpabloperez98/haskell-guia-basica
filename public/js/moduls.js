@@ -1,27 +1,3 @@
-let resultados = {
-    1 : {
-        "respuest_correct" : "option3",
-        "respuest_selected" : ""
-    },
-    2: {
-        "question1" : {
-            "respuest_correct" : "true",
-            "respuest_selected" : "false"
-        },
-        "question2" : {
-            "respuest_correct" : "true",
-            "respuest_selected" : "false"
-        },
-        "question3" : {
-            "respuest_correct" : "false",
-            "respuest_selected" : "false"
-        }
-    },
-    3 : {
-        "respuest_correct" : "option1",
-        "respuest_selected" : ""
-    }
-}
 
 
 var getNumResults = () => {

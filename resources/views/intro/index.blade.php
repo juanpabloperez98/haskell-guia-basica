@@ -1606,16 +1606,16 @@
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">Ejemplo 3</h5>
-                            <p class="card-text">Escriba una función descomponer que, a partir de una cantidad de segundos, devuelva una terna con las horas, minutos y segundos equivalentes</p>
+                            <p class="card-text">Escribir una función que determine si un año es bisiesto. Un año es bisiesto si es múltiplo de 4. Una excepción a la regla anterior es que los años múltiplos de 100 sólo son bisiestos cuando a su vez son múltiplos de 400</p>
                             <a  href="{{ route('ejemplos2', ['id'=>3]) }}" class="btn btn-amarillo">Ir al ejemplo</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-6">
                     <div class="card">
-                        <div class="card-body" style="min-height: 202px">
+                        <div class="card-body" style="min-height: 226px">
                             <h5 class="card-title">Ejemplo 4</h5>
-                            <p class="card-text">Defina una función que determine si un año es bisiesto o no</p>
+                            <p class="card-text">Escriba una función que añada un dígito a la derecha de un número entero</p>
                             <a  href="{{ route('ejemplos2', ['id'=>4]) }}" class="btn btn-azul">Ir al ejemplo</a>
                         </div>
                     </div>
@@ -1642,7 +1642,235 @@
         </div>
 
         <div class="col-lg-12 mx-auto px-3 pt-5 desactivate" style="min-height: 100vh" id="practica">
-            <h4 class="color-blue">2.13 Practica</h4>
+            <div id="enunciado" class="px-3" style="margin-top: 10%">
+                <h4 class="color-blue">1.6 Practica</h4>
+                <p class="my-4">
+                    En esta sección se busca afianzar los conocimientos adquiridos por parte del usuario en este módulo, por
+                    ende, a continuación, se mostrarán una serie de ejercicios y preguntas con las cuales se busca poner a
+                    prueba dicho conocimiento adquirido.
+                </p>
+                <a href="#" id="start-exe" class="btn btn-amarillo d-block w-25 mx-auto">Empezar ejercicios</a>
+            </div>
+
+            <div id="ejercicio1" class="mt-2 p-3 bg-light desactivate">
+                <div class="enunciado">
+                    <h5 class="color-blue">Ejercicio 1</h5>
+                    <P class="my-4">
+                        Se pide realizar una función que calcule la cantidad de dígitos que tienen un número, ¿Cómo se realiza dicha función?
+                    </P>
+                </div>
+
+                <div class="desarrollo mb-5">
+                    <div class="row mx-auto">
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <form action="" class="form form-inline">
+                                <div class="form-check">
+                                    <div class="checkbox-Soft mx-auto">
+                                        <input class="form-check-input" type="radio" name="radiosexercise1" value="option1" id="radio1">
+                                        <label class="form-check-label" for="radio1"></label>
+                                    </div>
+                                    <pre class="line-numbers">
+                                        <code class="language-haskell">
+                                            cantDig :: Integer -> Integer
+                                            cantDig 0 = 0
+                                            cantDig n = 1 + cantDig (div n 10)
+                                        </code>
+                                    </pre>
+                                </div>
+                                <div class="form-check">
+                                    <div class="checkbox-Soft mx-auto">
+                                        <input class="form-check-input" type="radio" name="radiosexercise1" value="option2" id="radio2">
+                                        <label class="form-check-label" for="radio2"></label>
+                                    </div>
+                                    <pre class="line-numbers">
+                                        <code class="language-haskell">
+                                            cantDig :: Integer -> Integer
+                                            cantDig 0 = 0
+                                            cantDig n = 1 + cantDig (mod n 10)
+                                        </code>
+                                    </pre>
+                                </div>
+                                <div class="form-check">
+                                    <div class="checkbox-Soft mx-auto">
+                                        <input class="form-check-input" type="radio" name="radiosexercise1" value="option3" id="radio3">
+                                        <label class="form-check-label" for="radio3"></label>
+                                    </div>
+                                    <pre class="line-numbers">
+                                        <code class="language-haskell">
+                                            cantDig :: Integer -> Integer
+                                            cantDig 0 = []
+                                            cantDig n = n + cantDig (div n 10)
+                                        </code>
+                                    </pre>
+                                </div>
+                                <div class="form-check">
+                                    <div class="checkbox-Soft mx-auto">
+                                        <input class="form-check-input" type="radio" name="radiosexercise1" value="option4" id="radio4">
+                                        <label class="form-check-label" for="radio4"></label>
+                                    </div>
+                                    <pre class="line-numbers">
+                                        <code class="language-haskell">
+                                            cantDig :: Integer -> Integer
+                                            cantDig 0 = 0
+                                            cantDig n = (1 : cantDig (div n 10))
+                                        </code>
+                                    </pre>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <p class="question">
+                                ¿Cual crees que es la opcion correcta?
+                                <span>Seleccione una opcion y dar en continuar</span>
+                                <a href="#" data-btnindex="1" class="btn btn-amarillo mx-auto continue">Continuar</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="ejercicio2" class="mt-2 p-3 bg-light desactivate">
+                <div class="enunciado">
+                    <h5 class="color-yellow">Ejercicio 2</h5>
+                    <P class="my-4">
+                        A continuación, se mostrarán una serie de preguntas las cuales usted deberá indicar si es verdadero o falso la afirmación o pregunta que se le está planteando
+                    </P>
+                </div>
+
+                <div class="desarrollo mb-5">
+                    <div class="row mx-auto">
+                        <div class="col-lg-6">
+                            <form action="" class="form form-inline">
+                                <div class="form-check">
+                                    <div class="checkbox-slide mx-auto">
+                                        <input class="form-check-input btontruefalse" type="checkbox" data-indexbton="1" value="option1" id="boton1">
+                                        <label class="form-check-label" for="boton1"></label>
+                                    </div>
+                                    <div class="p-question">
+                                        <p>
+                                            ¿La principal diferencia entre los tipos simples definidos y los constructores de tipos predefinidos en Haskell, es que los tipos simples definidos representan colecciones de objetos?
+                                        </p>
+                                        <span id="data-status1" class="false">Falso</span>
+                                    </div>
+                                </div>
+                                <div class="form-check mt-5">
+                                    <div class="checkbox-slide mx-auto">
+                                        <input class="form-check-input btontruefalse" type="checkbox" data-indexbton="2" value="option2" id="boton2">
+                                        <label class="form-check-label" for="boton2"></label>
+                                    </div>
+                                    <div class="p-question">
+                                        <p>
+                                            ¿La principal diferencia entre un operador y una función de dos argumentos es que los operadores se usan de modo infijo (entre sus argumentos) mientras que las funciones se usan de modo prefijo (preceden a sus argumentos)?
+                                        </p>
+                                        <span id="data-status2" class="false">Falso</span>
+                                    </div>
+                                </div> 
+                                <div class="form-check mt-5">
+                                    <div class="checkbox-slide mx-auto">
+                                        <input class="form-check-input btontruefalse" type="checkbox" data-indexbton="3" value="option3" id="boton3">
+                                        <label class="form-check-label" for="boton3"></label>
+                                    </div>
+                                    <div class="p-question">
+                                        <p>
+                                            ¿La comparación de patrones es utilizada en una función cuando se requiere hacer validaciones dentro de estas?
+                                        </p>
+                                        <span id="data-status3" class="false">Falso</span>
+                                    </div>
+                                </div> 
+                            </form>
+                        </div>
+                        <div class="col-lg-6">
+                            <p class="question px-md-3">
+                                Para escoger entre verdadero y falso dar click a los botones azules
+                                <span>Cuando este seguro de sus respuestas dar en continuar</span>
+                                <a href="#" data-btnindex="2" class="btn btn-amarillo mx-auto continue">Continuar</a>
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div id="ejercicio3" class="mt-2 p-3 bg-light desactivate">
+                <div class="enunciado">
+                    <h5 class="color-blue">Ejercicio 3</h5>
+                    <P class="my-4">
+                        Dada la siguiente función, determine el resultado que esta devolvería sabiendo que el valor de la variable x es igual a 8000
+                    </P>
+                </div>
+
+                <div class="desarrollo mb-5">
+                    <div class="row mx-auto">
+                        <div class="col-lg-6">
+                            <h5 class="color-yellow">Código</h5>
+                                <pre class="line-numbers">
+                                    <code class="language-haskell">
+                                        segundoahoras :: Integer -> (Integer,Integer,Integer)
+                                        segundoahoras x = (horas, minutos, segundos)
+                                            where 
+                                                horas = div x 3600
+                                                ss = mod x 3600
+                                                minutos = div ss 60
+                                                segundos = mod ss 60
+                                    </code>
+                                </pre>
+                        </div>
+                        <div class="col-lg-6">
+                            <h6 class="text-center font-weight-bold">¿Cual es el resultado de la función?</h6>
+                            <form action="" class="form">
+                                <div class="form-check">
+                                    <div class="checkbox-Soft order mx-auto">
+                                        <input class="form-check-input" type="radio" name="radiosexercise2" value="option1" id="secondradio1">
+                                        <label class="form-check-label" for="secondradio1"></label>
+                                        <p class="p-order">
+                                            [3,9,33]
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="form-check">
+                                    <div class="checkbox-Soft order mx-auto">
+                                        <input class="form-check-input" type="radio" name="radiosexercise2" value="option2" id="secondradio2">
+                                        <label class="form-check-label" for="secondradio2"></label>
+                                        <p class="p-order">
+                                            (2,13,20)
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="form-check">
+                                    <div class="checkbox-Soft order mx-auto">
+                                        <input class="form-check-input" type="radio" name="radiosexercise2" value="option3" id="secondradio3">
+                                        <label class="form-check-label" for="secondradio3"></label>
+                                        <p class="p-order">
+                                            2,20,11
+                                        </p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-lg-12">
+                            <p class="question order">
+                                ¿Cual crees que es la opcion correcta?
+                                <span>Seleccione una opcion y dar en continuar</span>
+                                <a href="#" data-btnindex="3" class="btn btn-amarillo mx-auto continue">Continuar</a>
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div id="result" class="mt-2 p-3 bg-light desactivate">
+                <div class="enunciado text-center">
+                    <h5 class="color-blue">Resultados</h5>
+                    <p class="question order w-50 mt-md-5 text-left mx-auto">
+                        Ha terminado la parte practica de este módulo, usted ha respondido correctamente <span id="correct_ans"></span>/5 preguntas
+                        <span id="recomendation">Seleccione una opcion y dar en continuar</span>
+                        <a href="#" data-btnindex="3" class="btn btn-amarillo mt-md-3">Pasar al siguiente módulo</a>
+                        <a href="#" data-btnindex="3" class="btn btn-azul mt-md-3">Reiniciar</a>
+                    </p>
+                    <span></span>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -1650,5 +1878,31 @@
 
 
 @section('scripts')
+    <script>
+        var resultados = {
+            1: {
+                "respuest_correct": "option1",
+                "respuest_selected": ""
+            },
+            2: {
+                "question1": {
+                    "respuest_correct": "false",
+                    "respuest_selected": "false"
+                },
+                "question2": {
+                    "respuest_correct": "true",
+                    "respuest_selected": "false"
+                },
+                "question3": {
+                    "respuest_correct": "false",
+                    "respuest_selected": "false"
+                }
+            },
+            3: {
+                "respuest_correct": "option2",
+                "respuest_selected": ""
+            }
+        }
+    </script>
     <script src="{{ asset('js/moduls.js') }}"></script>
 @endsection

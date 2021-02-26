@@ -46,57 +46,6 @@ $(".probar").each(function (index) {
     })
 });
 
-//Return result
-var cal = (state, val) => {
-    switch (state) {
-        case 1: {
-            return val * 2
-            break
-        }
-        case 2: {
-            return "La suma del doble del numero mas el numeros es " + ((val * 2) + val)
-            break
-        }
-        case 3: {
-            let sum = 0
-            for (let i = 1; i <= val; i++) {
-                sum += i
-            }
-            return "La suma de los numeros comprendidos es: " + sum
-            break
-        }
-    }
-}
-
-$(".formulario").each(function (index) {
-    $(this).submit((e) => {
-        e.preventDefault()
-        var id_resultado = parseInt($(this).attr('data-form')),
-            input = '#input' + id_resultado,
-            explain = '#explain' + id_resultado,
-            resultp = '#resultp' + id_resultado,
-            ejemplocuadro = '#ejemplocuadro' + id_resultado,
-            id_resultado_content = '#resultado' + id_resultado,
-            dato = parseInt($(input).val())
-
-        var validation = !isNaN(dato) ? true : false
-
-        if (validation) {
-            $(id_resultado_content).toggle('explode')
-            $(resultp).text(cal(id_resultado, dato)) //Set value to resultp id
-            $(explain).toggle('explode')
-            $(this).toggle('explode')
-            $(ejemplocuadro).toggle('explode')
-        } else {
-            Swal.fire({
-                icon: 'error',
-                title: 'Dato incorrecto!!',
-                text: 'Por favor ingrese un numero',
-            })
-        }
-    })
-});
-
 
 // When start script
 
@@ -126,7 +75,6 @@ $('.paso-right').each(function (index) {
                 num += valor[i]
             }
             num = parseFloat(num)
-            console.log(num)
             num += 23.5
             $(linea).text(msg)
             $('#ejemplocuadro' + num_exercise).css('top', num)
@@ -151,7 +99,6 @@ $('.paso-left').each(function (index) {
                 num += valor[i]
             }
             num = parseFloat(num)
-            console.log(num)
             num -= 23.5
             $(linea).text(msg)
             $('#ejemplocuadro' + num_exercise).css('top', num)
