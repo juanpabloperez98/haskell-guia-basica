@@ -1,4 +1,3 @@
-let page = '{!! $dad_page !!}'
 var lista_nums = []
 
 var msg_error = (msg) => {
@@ -11,96 +10,74 @@ var msg_error = (msg) => {
 
 var pasoapaso = {
     'ejercicio1': {
-        1: "1 Se declara la sentencia dobleNumero en forma de función, indicándole que recibe un valor y retorna otro valor",
-        2: "2 Se inicializa la sentencia dobleNumero, se le indica que recibe un parámetro x y esta función retornara el valor de multiplicar x * 2",
+        1: "1.	Se declara la sentencia aEntero, indicándole que va a recibir una lista de Integer y devolver un Integer",
+        2: "2.	Se declara el primer patrón indicando cuando la lista solo tenga un elemento, devolviendo el elemento correspondiente de esa lista",
+        3: "3.	Se declara el segundo patrón, en este se define las variables d y m que representan los dos primeros elementos de una lista, y xs que representa el resto de elementos que tenga la lista, esto se iguala al llamado recursivo hacía la misma función, en esta se multiplica el primer elemento por 10 y se le suma el segundo elemento de la lista para concatenarlos, al llamado recursivo se le pasa xs que representa el resto de la lista",
+        'line_actual': 1,
+        'total_lines': 3
+    },
+
+    'ejercicio2': {
+        1: "1. Se declara la sentencia de la función aLista, indicándole que va a recibir un Integer y devolver una lista de Integer",
+        2: "2. Se declara el primer patrón (el patrón de parada), diciendo que cuando el número sea cero, entonces devolver una lista vacía []",
+        3: "3. Se declara el segundo patrón, en este se saca el modulo del valor de x entre 10 y se agrega a la lista, luego se hace el llamado recursivo a la función mandándole como parámetro la división entera de x entre 10",
+        4: "4. Salto de línea",
+        5: "5. Ahora se declara la sentencia de una función llamada reverseList, esta recibirá una lista de Integer y devolver otra lista de Integer, el objetivo de esta función es voltear el orden de una lista, es decir si la lista recibida es [1,2,3] esta función retornara [3,2,1]",
+        6: "6. Se declara el primer patrón (el patrón de parada), diciendo que cuando la lista este vacía entonces retorne la lista vacía",
+        7: "7. Se declara el segundo patrón, este recibe una lista con elementos, y hace el llamado recursivo pasando como parámetros el resto de la lista xs y le concatena con el operador ++ el primer elemento de la lista",
+        8: "8. Salto de línea",
+        9: "9. Ahora se declara sentencia de la función invtrans, esta función recibirá un Integer y devolverá una lista de Integer, esta función es la que va hacer el llamado conjunto de las dos anteriores",
+        10: "10. Se define que la función recibe el número en x, utilizando la palabra do se indica que se va a realizar un bloque de código",
+        11: "11. Utilizando let se declara una variable la cual se llama x_ y se iguala a lo que retorne la función aLista pasándole x como parámetro. NOTA: recordar que aLista retorna una lista de Integer",
+        12: "12. Por último, se hace el llamado a la función reverseList pasándole como parámetro el valor de la variable x_",
+        'line_actual': 1,
+        'total_lines': 12
+    },
+
+    'ejercicio3': {
+        1: "1. Se declara la sentencia de la función esMultiploDe, recibiendo como parámetro dos Integer y como resultado devuelve un Booleano",
+        2: "2. Se define que la función esMultipliDe recibe dos valores a y b, y retorna el resultado de comparar si el módulo de a entre b es igual a 0, de ser así, esta retornara un True, de lo contrario un False",
+        3: "3. Salto de línea",
+        4: "4. Ahora de declara la sentencia de la función esBisiesto, esta recibe un Integer y retorna un Bool",
+        5: "5. Por último, se define que la función esBisiesto recibe un valor x, y esta devolverá verdadero si el valor de x es múltiplo de 4 y adicional a eso múltiplo de 100 y de 400   ",
+        'line_actual': 1,
+        'total_lines': 5
+    },
+    'ejercicio4': {
+        1: "1. Se declara la sentencia de la función aLaDerechaDe, especificando que va a recibir dos valores Integer como parámetros y retornara otro Integer",
+        2: "2. Se define que la función aLaDerechaDe recibe dos valores x and y, y esta retorna los números concatenados, para hacerlo solo se necesita multiplica el primer número por 10 y sumarle es segundo número (realice la prueba con cualquier número y se dará cuenta que es un método efectivo)",
         'line_actual': 1,
         'total_lines': 2
     },
-    'ejercicio2': {
-        1: "1 Se declara la sentencia dobleNumero la cual se indica que recibirá un valor entero y se retornará otro valor entero",
-        2: "2 Se inicializa la sentencia dobleNumero, se le indica que recibe un parámetro x y esta función retornara el valor de multiplicar x * 2",
-        3: "3 Se crea una sesión la cual se llamara ex (NOTA: la expresión IO() se le indica a la sesión para declarar que se van a usar acciones de entrada y salida para poder pedir datos al usuario)",
-        4: "4 La sentencia creada se iguala a un bloque de instrucciones (NOTA: la expresión do, sirve para indicar que se va hacer un bloque que contendrá múltiples acciones I/O)",
-        5: "5 Se utiliza la función putStrLn para imprimir pon pantalla un mensaje, en este caso el mensaje es: “Ingrese número”",
-        6: "6 La función getLine es una función de entrada, por lo que permite que un usuario ingrese un dato, al utilizar el <- se le asigna el valor ingresado por el usuario a una variable llamada line1",
-        7: "7 Cada dato que ingrese el usuario utilizando la función getLine, es tomado como un dato de tipo string, por lo que para convertirlo a entero se utiliza la función read seguido de la variable que almacena el dato ingresado, en este caso line1 y luego se le indica con :: Int que se quiere convertir a un tipo de dato entero, el valor convertido será almacenado en una variable llamada num",
-        8: "8 Ahora se hace el llamado a la función dobleNumero pasándole como parámetro la variable num (Recordar que esta función retorna el número pasado como parámetro multiplicado por 2), el resultado retornado se almacenara en la variable doble",
-        9: "9 Luego se realiza la suma entre los valores almacenados en las variables doble (recordar que el valor de esta variable fue lo que retorno la función dobleNumero) y num (recordar que el valor de esta variable es el dato ingresado por el usuario), esta operación es almacenada en una variable llamada suma",
-        10: "10 Por ultimo se imprime un mensaje con el resultado de la suma (NOTA: se utiliza la función print puesto que esta imprime cualquier tipo de valor ya sea string, entero o cualquier otro sin embargo, para concatenar el mensaje y el valor de la suma es necesario usar la función show que permite convertir a string un entero, en este caso el entero de la variable suma)",
-        'line_actual': 1,
-        'total_lines': 10
-    },
-    'ejercicio3': {
-        1: "1 Se crea una sesión llamada ex2 (Similar a la del ejemplo anterior) y se le indica que va a usar acciones de entrada y salida",
-        2: "2 La sentencia creada se iguala a un bloque de instrucciones",
-        3: "3 Se utiliza la función putStrLn para imprimir pon pantalla un mensaje, en este caso el mensaje es: “Ingrese número”",
-        4: "4 Se utiliza la función getLine para pedirle un número al usuario, este dato se almacena en la variable num",
-        5: "5 Se convierte el dato a entero utilizando la función read",
-        6: "6 Se utiliza la función sum indicándole que se quiere sumar todos los números comprendidos entre 1 y el número ingresado por el usuario, el resultado de esa suma, es almacenado en la variable suma",
-        7: "7 Se imprime el mensaje del total de la suma, utilizando la función show se convierte la variable suma en string para poder concatenarla con el mensaje",
-        'line_actual': 1,
-        'total_lines': 7
-    },
-    'ejercicio4': {
-        1: "Esta es la línea 1 de la explicación paso a paso",
-        2: "Esta es la línea 2 de la explicación paso a paso",
-        3: "Esta es la línea 3 de la explicación paso a paso",
-        4: "Esta es la línea 4 de la explicación paso a paso",
-        5: "Esta es la línea 5 de la explicación paso a paso",
-        6: "Esta es la línea 6 de la explicación paso a paso",
-        7: "Esta es la línea 7 de la explicación paso a paso",
-        8: "Esta es la línea 8 de la explicación paso a paso",
-        9: "Esta es la línea 9 de la explicación paso a paso",
-        10: "Esta es la línea 10 de la explicación paso a paso",
-        11: "Esta es la línea 11 de la explicación paso a paso",
-        12: "Esta es la línea 12 de la explicación paso a paso",
-        13: "Esta es la línea 13 de la explicación paso a paso",
-        'line_actual': 1,
-        'total_lines': 13
-    },
+
     'ejercicio5': {
-        1: "Esta es la línea 1 de la explicación paso a paso",
-        2: "Esta es la línea 2 de la explicación paso a paso",
-        3: "Esta es la línea 3 de la explicación paso a paso",
-        4: "Esta es la línea 4 de la explicación paso a paso",
-        5: "Esta es la línea 5 de la explicación paso a paso",
-        6: "Esta es la línea 6 de la explicación paso a paso",
-        7: "Esta es la línea 7 de la explicación paso a paso",
-        8: "Esta es la línea 8 de la explicación paso a paso",
-        9: "Esta es la línea 9 de la explicación paso a paso",
-        10: "Esta es la línea 10 de la explicación paso a paso",
-        11: "Esta es la línea 11 de la explicación paso a paso",
-        12: "Esta es la línea 12 de la explicación paso a paso",
-        13: "Esta es la línea 13 de la explicación paso a paso",
-        14: "Esta es la línea 14 de la explicación paso a paso",
-        15: "Esta es la línea 15 de la explicación paso a paso",
-        16: "Esta es la línea 16 de la explicación paso a paso",
-        17: "Esta es la línea 17 de la explicación paso a paso",
+        1: "1. Se declara la sentencia de la función multiNums, se especifica que recibe dos Integer y retorna otro Integer",
+        2: "2. Se define la función multiNums la cual recibe dos valores, x and y",
+        3: "3. Luego se define la función a trozos, donde el primer trozo especifica si y es menor o igual a cero, de ser así esta retornara un cero",
+        4: "4. El otro torzo se define para cualquier otro caso, se utiliza la palabra reservada do, para especificar que se va a realizar un bloque de código",
+        5: "5. Se declara una variable utilizando let, la cual se llamará newy y se iguala a el valor de y – 1",
+        6: "6. Por último, se suma el valor de x con el llamado a la función recursivamente pasándole como parámetros el mismo valor de x, pero ahora la nueva variable de y disminuida que sería newy",
         'line_actual': 1,
-        'total_lines': 17
+        'total_lines': 6
     },
     'ejercicio6': {
-        1: "Esta es la línea 1 de la explicación paso a paso",
-        2: "Esta es la línea 2 de la explicación paso a paso",
-        3: "Esta es la línea 3 de la explicación paso a paso",
-        4: "Esta es la línea 4 de la explicación paso a paso",
-        5: "Esta es la línea 5 de la explicación paso a paso",
-        6: "Esta es la línea 6 de la explicación paso a paso",
-        7: "Esta es la línea 7 de la explicación paso a paso",
-        8: "Esta es la línea 8 de la explicación paso a paso",
-        9: "Esta es la línea 9 de la explicación paso a paso",
-        10: "Esta es la línea 10 de la explicación paso a paso",
-        11: "Esta es la línea 11 de la explicación paso a paso",
-        12: "Esta es la línea 12 de la explicación paso a paso",
-        13: "Esta es la línea 13 de la explicación paso a paso",
-        14: "Esta es la línea 14 de la explicación paso a paso",
-        15: "Esta es la línea 15 de la explicación paso a paso",
-        16: "Esta es la línea 16 de la explicación paso a paso",
-        17: "Esta es la línea 17 de la explicación paso a paso",
-        18: "Esta es la línea 18 de la explicación paso a paso",
-        19: "Esta es la línea 19 de la explicación paso a paso",
+        1: "1. Se declara la sentencia de la función llamada funprueba, la cual recibe un Integer y devuelve otro Integer",
+        2: "2. Se define la función funprueba, esta recibe un parámetro n y retorna la multiplicación de n entre 2",
+        3: "3. Salto de línea",
+        4: "4. Se declara la sentencia de la función llamada funprueb2, la cual recibe un Integer y devuelve otro Integer",
+        5: "5. Se define la función funprueba2, esta recibe un parámetro n y retorna la multiplicación de n entre 3",
+        6: "6. Salto de línea",
+        7: "7. Se declara la sentencia de la función llamada funprueba3, la cual recibe un Integer y devuelve otro Integer",
+        8: "8. Se define la función funprueba3, esta recibe un parámetro n y retorna la multiplicación de n entre 4",
+        9: "9. NOTA: estas funciones son declaradas para poder mostrar el ejemplo del operador que recibe una lista de funciones",
+        10: "10. Se declara el operador |>, se especifica que recibe una lista de funciones (funciones las cuales reciben un Integer y retornan otro Integer, como las que se acaban de declarar) y un número Integer, y retorna una lista de Integer",
+        11: "11. Se declara el primer patrón, este especifica que cuando la lista de funciones este vacía, sin importar el valor de x, esta va a retornar []",
+        12: "12. Se declara el segundo patrón, y este especifica que recibe una lista con elementos (f : fs) donde f es el primer elemento de la lista (cada elemento de esa lista es una función), y recibe un valor x. Este patrón hará el llamado de la función f, pasándole como parámetro el valor x, y lo añadirá a una lista. Notese que después de hacer el llamado a la función f, entre paréntesis () se vuelve hacer el llamado al operador |> (de esta manera es como se devolverá una lista de elementos Integer, recordar que cada función f x devuelve un Integer)",
+        13: "13. Salto de línea",
+        14: "14. Se declara la sentencia de la función implement, donde se especifica que esta recibe un Integer y retorna una lista de Integer. NOTA: esta función es la que permite hacer el llamado al operador creado, pasándole una lista de funciones y un valor n",
+        15: "15. Se define la función implement, la cual esta recibe un parámetro n, y hace el llamado al operador |> utilizando una lista de funciones (funciones que se declararon anteriormente) y el parámetro n",
         'line_actual': 1,
-        'total_lines': 19
+        'total_lines': 15
     }
 }
 
@@ -117,6 +94,7 @@ var cal = (state, val) => {
         }
         case 2: {
             var element = '['
+            val = val.toString()
             for (let i = 0; i < val.length; i++) {
                 i != val.length - 1 ? element += val[i] + ',' : element += val[i] + ']'
             }
@@ -205,7 +183,7 @@ $(".formulario").each(function (index) {
         id_resultado == 1 ? msg = 'Por favor ingrese una lista' : msg = 'Por favor ingrese un número'
 
         validation = validation_(id_resultado, dato)
-        if(id_resultado == 4 || id_resultado == 5){ //Validar si estan en los ejercicios 4 o 5 (que requieren dos datos)
+        if((id_resultado == 4 || id_resultado == 5) && validation[0]){ //Validar si estan en los ejercicios 4 o 5 (que requieren dos datos)
             lista_nums.push(parseInt(dato))
             id_resultado == 4 ? $('#form4')[0].reset() : $('#form5')[0].reset()  //Dependiendo el ejercicio se fomatea su formulario correspondiente
             if(lista_nums.length == 2){ //Valida si ya se han ingresado los dos números

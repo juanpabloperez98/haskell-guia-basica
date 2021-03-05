@@ -96,7 +96,7 @@
                                         <div class="content-img-slide"><img
                                                 src="{{ asset('images/polimorfismo/poliformismo.png') }}" alt="imagen">
                                         </div>
-                                        <h3><a href="#">Funciones de orden superior y polimorfismo</a></h3>
+                                        <h3><a href="{{ route('orden-superior') }}">Funciones de orden superior y polimorfismo</a></h3>
                                     </div>
                                 </div>
                             </div>

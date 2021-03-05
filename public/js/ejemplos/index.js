@@ -48,8 +48,13 @@ $(".probar").each(function (index) {
 
 
 // When start script
+if(page == 'funciones-orden-superior'){
+    var mx = 4
+}else{
+    var mx = 6
+}
 
-for (let i = 1; i <= 6; i++) {
+for (let i = 1; i <= mx; i++) {
     let linea = '#explain_code' + i,
         reference = 'ejercicio' + i,
         id_ = pasoapaso[reference]['line_actual'],
@@ -106,3 +111,4 @@ $('.paso-left').each(function (index) {
 
     })
 })
+

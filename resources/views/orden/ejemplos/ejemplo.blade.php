@@ -9,17 +9,18 @@
     <div class="row section-info-moduls" style="min-height: 100vh">
         <div class="col-lg-12 mx-auto px-3 pt-5 desactivate" id="ejemplo1">
             <h5 class="color-yellow">Ejemplo 1</h5>
-            <p class="my-4 bg-light p-3">Defina una función que se llame aEntero y transforme una lista de dígitos en el
-                correspondiente valor entero</p>
+            <p class="my-4 bg-light p-3">Utilizando notación lamda, realice una función que determine si un número es par o impar, de ser par a dicho número se le sumara 2, de lo contrario se le sumara 1</p>
 
             <div class="row mx-auto mt-5">
                 <div class="col-lg-6 p-0">
                     <h5 class="color-yellow">Codigo</h5>
                     <pre class="line-numbers">
                         <code class="language-haskell">
-                            aEntero :: [Integer] -> Integer;
-                            aEntero [d] = d
-                            aEntero (d:m:xs) = aEntero((10 * d + m) : xs)
+                            esPar :: Integer -> Bool
+                            esPar = \x -> mod x 2 == 0
+
+                            sumaNum :: Integer -> Integer
+                            sumaNum = \x -> if esPar x then x + 2 else x + 1
                         </code>
                     </pre>
                     <div class="desactivate ejemplocuadro" id="ejemplocuadro1">
@@ -34,7 +35,7 @@
 
                     <form action="" data-form="1" id="form1" class="formulario desactivate">
                         <input type="text" class="form-control" id="input1"
-                            placeholder="Ingrese la lista de números [1,2,3,4]">
+                            placeholder="Ingrese un número">
                         <button type="submit" class="btn btn-amarillo ml-1">Siguiente
                             <img class="ml-1" style="width: 20px" src="{{ asset('images/icons/next.png') }}"
                                 alt="run logo">
@@ -47,8 +48,6 @@
                                 alt="run logo">
                         </a>
                     </div>
-
-                    <span style="font-size: 10px">Para escribir una lista utilice la siguiente notación ej: [1,2,3]</span>
                 </div>
 
                 <div class="col-lg-6 p-0 text-center desactivate" id="explain1">
@@ -70,27 +69,15 @@
 
         <div class="col-lg-12 mx-auto px-3 pt-5 mb-5 desactivate" id="ejemplo2">
             <h5 class="color-yellow">Ejemplo 2</h5>
-            <p class="my-4 bg-light p-3">Defina una función que se llame aLista y agregue cada uno de los dígitos de un
-                número a una lista</p>
-
+            <p class="my-4 bg-light p-3">Utilizando notación lamda, cree una función que permita recibir tres números y los junte de manera inversa (Por ejemplos 1 2 3, se debe juntar como el número 321)</p>
 
             <div class="row mx-auto mt-5">
                 <div class="col-lg-6 p-0">
                     <h5 class="color-yellow">Codigo</h5>
                     <pre class="line-numbers">
                         <code class="language-haskell">
-                            aLista :: Integer -> [Integer]
-                            aLista 0 = []
-                            aLista x = (mod x 10 : (aLista (div x 10)))
-
-                            reverseList :: [Integer] -> [Integer]
-                            reverseList [] = []
-                            reverseList (x:xs) = reverseList xs  ++ [x]
-
-                            invtrans :: Integer -> [Integer]
-                            invtrans x = do
-                                let x_ = aLista x 
-                                reverseList x_ 
+                            maneraInversa :: Integer -> Integer -> Integer -> Integer 
+                            maneraInversa = \x y z -> z*100 + y*10 + x 
                         </code>
                     </pre>
                     <div class="desactivate ejemplocuadro" id="ejemplocuadro2">
@@ -138,18 +125,19 @@
 
         <div class="col-lg-12 mx-auto px-3 pt-5 desactivate" id="ejemplo3">
             <h5 class="color-yellow">Ejemplo 3</h5>
-            <p class="my-4 bg-light p-3">Escribir una función que determine si un año es bisiesto. Un año es bisiesto si es múltiplo de 4. Una excepción a la regla anterior es que los años múltiplos de 100 sólo son bisiestos cuando a su vez son múltiplos de 400</p>
+            <p class="my-4 bg-light p-3">Realice una función que permite recibir dos números y devuelva una serie de números convertidos a cadenas, el primer número indicara desde que número se desea imprimir la serie y el segundo número indicara de ahí en adelante cuantos números se desea mostrar. Por ejemplo 3 4, el resultado seria “4 5 6 7”. Nota: es necesario utilizar parcialización un operador de sección para realizar este ejercicio</p>
 
             <div class="row mx-auto mt-5">
                 <div class="col-lg-6 p-0">
                     <h5 class="color-yellow">Codigo</h5>
                     <pre class="line-numbers">
                             <code class="language-haskell">
-                                esMultiploDe::Integer->Integer->Bool 
-                                esMultiploDe a b = (mod a b == 0)
+                                sumNum :: Integer -> Integer 
+                                sumNum = (+ 1)
 
-                                esBisiesto :: Integer -> Bool 
-                                esBisiesto x = esMultiploDe x 4 && (esMultiploDe x 100 && esMultiploDe x 400)
+                                serieNums :: Integer-> Integer -> String
+                                serieNums a 0 = ""
+                                serieNums a n = show(sumNum(a))++ " " ++ serieNums(a+1)(n-1)
                             </code>
                         </pre>
                     <div class="desactivate ejemplocuadro" id="ejemplocuadro3">
@@ -197,15 +185,21 @@
 
         <div class="col-lg-12 mx-auto px-3 pt-5 desactivate" id="ejemplo4">
             <h5 class="color-yellow">Ejemplo 4</h5>
-            <p class="my-4 bg-light p-3">Escriba una función que añada un dígito a la derecha de un número entero</p>
+            <p class="my-4 bg-light p-3">Utilizando funciones de orden superior realice una función que calcule el cuadrado de un número, luego se requiere que al resultado de esa operación se le vuelva a calcular el cuadrado, es necesario poder utilizar operadores de sección. Por ejemplo, si el número ingresado es 3, el primer cuadrado sería 9, y el segundo cuadrado sería 81.</p>
 
             <div class="row mx-auto mt-5">
                 <div class="col-lg-6 p-0">
                     <h5 class="color-yellow">Codigo</h5>
                     <pre class="line-numbers">
                             <code class="language-haskell">
-                                aLaDerechaDe :: Integer -> Integer -> Integer 
-                                aLaDerechaDe x y = x*10 + y
+                                exponente :: Float -> Float  
+                                exponente = (**2)
+                                
+                                dosVeces :: (Float -> Float) -> Float -> Float
+                                dosVeces f x = f (f x)
+
+                                calcularExpo :: Float -> Float 
+                                calcularExpo n = dosVeces exponente n
                             </code>
                         </pre>
                     <div class="desactivate ejemplocuadro" id="ejemplocuadro4">
@@ -249,10 +243,9 @@
                     </div>
                 </div>
             </div>
-
         </div>
 
-        <div class="col-lg-12 mx-auto px-3 pt-5 desactivate" id="ejemplo5">
+        {{-- <div class="col-lg-12 mx-auto px-3 pt-5 desactivate" id="ejemplo5">
             <h5 class="color-yellow">Ejemplo 5</h5>
             <p class="my-4 bg-light p-3">Escriba una función que devuelva la multiplicación de dos números utilizando sumas</p>
 
@@ -379,7 +372,7 @@
                         </div>
                     </div>
                 </div>
-        </div>
+        </div> --}}
     </div>
 @endsection
 
@@ -388,6 +381,6 @@
         const id = {!! $identity !!}
         let page = '{!! $dad_page !!}'
     </script>
-    <script src="{{ asset('js/ejemplos/mod2/mod.js') }}"></script>
+    <script src="{{ asset('js/ejemplos/mod3/mod.js') }}"></script>
     <script src="{{ asset('js/ejemplos/index.js') }}"></script>
 @endsection

@@ -20,7 +20,8 @@ Route::get('/', function () {
 Route::prefix('programacion-funcional/')->group(function () {
     Route::get('index/', function () {
         return view('funcional.index', [
-            'page' => 'modul'
+            'page' => 'modul',
+            'dad_page' => 'programacion-funcional'
         ]);
     })->name('funcional');
 
@@ -37,7 +38,8 @@ Route::prefix('programacion-funcional/')->group(function () {
 Route::prefix('introduccion-haskell/')->group(function () {
     Route::get('index/', function () {
         return view('intro.index', [
-            'page' => 'modul'
+            'page' => 'modul',
+            'dad_page' => 'introduccion-haskell'
         ]);
     })->name('introhaskell');
 
@@ -49,4 +51,22 @@ Route::prefix('introduccion-haskell/')->group(function () {
             'dad_page' => 'introduccion-haskell'
         ]);
     })->name('ejemplos2');
+});
+
+Route::prefix('funciones-orden-superior/')->group(function () {
+    Route::get('index/', function () {
+        return view('orden.index', [
+            'page' => 'modul',
+            'dad_page' => 'funciones-orden-superior'
+        ]);
+    })->name('orden-superior');
+
+    Route::get('ejemplos/{id}', function () {
+        $id = \Request::route('id');
+        return view('orden.ejemplos.ejemplo', [
+            'page' => 'ejemplo',
+            'identity' => $id,
+            'dad_page' => 'funciones-orden-superior'
+        ]);
+    })->name('ejemplos3');
 });

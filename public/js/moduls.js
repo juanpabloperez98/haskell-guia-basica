@@ -151,3 +151,7 @@ $('.btontruefalse').each(function(index) {
         }
     })
 });
+
+$('#reiniciar').on('click',(e) =>{
+    location.reload();
+})

@@ -417,6 +417,7 @@
 @section('scripts')
     <script>
         const id = {!! $identity !!}
+        let page = '{!! $dad_page !!}'
     </script>
     <script src="{{ asset('js/ejemplos/mod1/mod.js') }}"></script>
     <script src="{{ asset('js/ejemplos/index.js') }}"></script>

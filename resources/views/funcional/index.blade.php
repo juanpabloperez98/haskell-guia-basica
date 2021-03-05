@@ -1002,8 +1002,8 @@
                         Ha terminado la parte practica de este módulo, usted ha respondido correctamente <span
                             id="correct_ans"></span>/5 preguntas
                         <span id="recomendation">Seleccione una opcion y dar en continuar</span>
-                        <a href="#" data-btnindex="3" class="btn btn-amarillo mt-md-3">Pasar al siguiente módulo</a>
-                        <a href="#" data-btnindex="3" class="btn btn-azul mt-md-3">Reiniciar</a>
+                        <a href="{{ route('introhaskell') }}" data-btnindex="3" class="btn btn-amarillo mt-md-3">Pasar al siguiente módulo</a>
+                        <a href="#" id="reiniciar" data-btnindex="3" class="btn btn-azul mt-md-3">Reiniciar</a>
                     </p>
                     <span></span>
                 </div>

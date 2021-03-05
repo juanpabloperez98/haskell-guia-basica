@@ -135,13 +135,13 @@
                 </p>
 
                 <pre class="line-numbers">
-                                                                                            <code class="language-haskell">
-                                                                                                (&&) :: Bool -> Bool -> Bool 
-                                                                                                (||) :: Bool -> Bool -> Bool 
-                                                                                                not :: Bool -> Bool -> Bool 
-                                                                                                otherwise :: función constante que devuelve True
-                                                                                            </code>
-                                                                                        </pre>
+                    <code class="language-haskell">
+                        (&&) :: Bool -> Bool -> Bool 
+                        (||) :: Bool -> Bool -> Bool 
+                        not :: Bool -> Bool -> Bool 
+                        otherwise :: función constante que devuelve True
+                    </code>
+                </pre>
 
                 <p class="my-4">
                     Los siguientes operadores y funciones predefinidos operan con valores booleanos:
@@ -222,17 +222,17 @@
                 <div class="row mx-auto">
                     <div class="col-6">
                         <pre class="line-numbers">
-                                                                                                            <code class="language-haskell">
-                                                                                                                minBound:: Int
-                                                                                                            </code>
-                                                                                                        </pre>
+                            <code class="language-haskell">
+                                minBound:: Int
+                            </code>
+                        </pre>
                     </div>
                     <div class="col-6">
                         <pre class="line-numbers">
-                                                                                                            <code class="language-haskell">
-                                                                                                                maxBound:: Int
-                                                                                                            </code>
-                                                                                                        </pre>
+                            <code class="language-haskell">
+                                maxBound:: Int
+                            </code>
+                        </pre>
                     </div>
                 </div>
                 <h6 style="font-weight: bold" class="color-yellow mt-md-4">Funciones y operadores</h6>
@@ -301,20 +301,20 @@
                 </p>
 
                 <pre class="line-numbers">
-                                                                                                    <code class="language-haskell">
-                                                                                                        (+),(-),(*) :: Float -> Float -> Float Suma resta y productos de reales
-                                                                                                        abs :: Float -> Float Valor absoluto
-                                                                                                        sigmun:: Float Devuelve 1.0, -1.0 o 0.0 según el signo del argumento entero
-                                                                                                        negate:: Float -> Float Invierte el signo de su argumento; también puede usarse para este propósito un uso prefijo
-                                                                                                        sin, asin, cos, acos, tan, atan :: Float -> Float funciones trignonometricas
-                                                                                                        atan2 :: Float -> Float -> Float atan2 x y devuelve la arcotangente de x/y
-                                                                                                        log, exp :: Float -> Float. Funciones logarítmicas y exponenciales
-                                                                                                        sqrt :: Float -> Float Raíz cuadrada
-                                                                                                        pi :: Float El valor de un número pi
-                                                                                                        truncate, round, floor y ceiling :: Float -> Integer o Float -> Int. Funciones de redondeo; truncate elimina la parte decimal, round redondea al entero más próximo, floor devuelve el entero inferior y ceiling el superior.
-                                                                                                        fromInt :: Int -> Float y fromInteger :: Integer -> Float. Funciones de conversión de tipo
-                                                                                                    </code>
-                                                                                                </pre>
+                    <code class="language-haskell">
+                        (+),(-),(*) :: Float -> Float -> Float Suma resta y productos de reales
+                        abs :: Float -> Float Valor absoluto
+                        sigmun:: Float Devuelve 1.0, -1.0 o 0.0 según el signo del argumento entero
+                        negate:: Float -> Float Invierte el signo de su argumento; también puede usarse para este propósito un uso prefijo
+                        sin, asin, cos, acos, tan, atan :: Float -> Float funciones trignonometricas
+                        atan2 :: Float -> Float -> Float atan2 x y devuelve la arcotangente de x/y
+                        log, exp :: Float -> Float. Funciones logarítmicas y exponenciales
+                        sqrt :: Float -> Float Raíz cuadrada
+                        pi :: Float El valor de un número pi
+                        truncate, round, floor y ceiling :: Float -> Integer o Float -> Int. Funciones de redondeo; truncate elimina la parte decimal, round redondea al entero más próximo, floor devuelve el entero inferior y ceiling el superior.
+                        fromInt :: Int -> Float y fromInteger :: Integer -> Float. Funciones de conversión de tipo
+                    </code>
+                </pre>
             </div>
 
             <div class="p-md-3 content-line">
@@ -371,13 +371,13 @@
                                                                                             </pre>
                 <div class="desactivate" id="result-code1">
                     <pre>
-                                                                                                    <code class="language-haskell">
-                                                                                                        'A' :: char
-                                                                                                        97 :: Int
-                                                                                                        False :: Bool
-                                                                                                        'b' :: Char
-                                                                                                    </code>
-                                                                                                </pre>
+                        <code class="language-haskell">
+                            'A' :: char
+                            97 :: Int
+                            False :: Bool
+                            'b' :: Char
+                        </code>
+                    </pre>
                 </div>
                 <a href="#" data-close="1" id="probar1" class="btn btn-primary ejecutar">Probar</a>
                 <a href="#" id="btn1" class="btn-primary cerrar desactivate">Cerrar</a>
@@ -1865,8 +1865,8 @@
                     <p class="question order w-50 mt-md-5 text-left mx-auto">
                         Ha terminado la parte practica de este módulo, usted ha respondido correctamente <span id="correct_ans"></span>/5 preguntas
                         <span id="recomendation">Seleccione una opcion y dar en continuar</span>
-                        <a href="#" data-btnindex="3" class="btn btn-amarillo mt-md-3">Pasar al siguiente módulo</a>
-                        <a href="#" data-btnindex="3" class="btn btn-azul mt-md-3">Reiniciar</a>
+                        <a href="{{ route('orden-superior') }}" data-btnindex="3" class="btn btn-amarillo mt-md-3">Pasar al siguiente módulo</a>
+                        <a href="#" id="reiniciar" data-btnindex="3" class="btn btn-azul mt-md-3">Reiniciar</a>
                     </p>
                     <span></span>
                 </div>
