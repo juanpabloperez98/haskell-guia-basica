@@ -775,8 +775,8 @@
             <a href="#" data-close="12" id="probar12" class="btn btn-primary ejecutar">Probar</a>
             <a href="#" id="btn12" class="btn-primary cerrar desactivate">Cerrar</a>
 
-            <div class="img" style="">
-                <img style="width: 100%" src="{{ asset('images/polimorfismo/imagen1.png') }}" alt="imagen1">
+            <div class="img text-center" style="">
+                <img style="width: 60%" class="mx-auto" src="{{ asset('images/polimorfismo/imagen2.png') }}" alt="imagen1">
             </div>
             <p class="my-4">
                 En el primer diálogo unaVez actúa con tipo (Integer -> Integer) -> Integer -> Integer. En el segundo, el tipo es (Integer -> Bool) -> Integer -> Bool. 
@@ -1216,7 +1216,7 @@
             </div>
         </div>
         <div class="col-lg-12 mx-auto px-3 pt-5 desactivate" style="min-height: 100vh" id="ejemplos">
-            <h4 class="color-yellow">2.12 Ejemplos</h4>
+            <h4 class="color-yellow">3.3 Ejemplos</h4>
             <p class="my-4">
                 A continuación, se mostrarán una serie de ejemplos con relación a todo el material visto en este módulo, de
                 esta manera se busca que usted como usuario pueda tener un mejor entendimiento del módulo y de cada una de
@@ -1284,7 +1284,7 @@
         </div>
         <div class="col-lg-12 mx-auto px-3 pt-5 desactivate" style="min-height: 100vh" id="practica">
             <div id="enunciado" class="px-3" style="margin-top: 10%">
-                <h4 class="color-blue">1.6 Practica</h4>
+                <h4 class="color-blue">3.4 Practica</h4>
                 <p class="my-4">
                     En esta sección se busca afianzar los conocimientos adquiridos por parte del usuario en este módulo, por
                     ende, a continuación, se mostrarán una serie de ejercicios y preguntas con las cuales se busca poner a

@@ -103,9 +103,9 @@
                             <div class="carousel-item carousel-item-themes">
                                 <div class="row">
                                     <div class="col-lg-4">
-                                        <div class="content-img-slide"><img src="{{ asset('images/operadores.png') }}"
+                                        <div class="content-img-slide"><img src="{{ asset('images/defTipos/main.png') }}"
                                                 alt="imagen"></div>
-                                        <h3><a href="#">Definición de tipos</a></h3>
+                                        <h3><a href="{{ route('definicion-tipos') }}">Definición de tipos</a></h3>
                                     </div>
                                     <div class="col-lg-4">
                                         <div class="content-img-slide"><img src="{{ asset('images/operadores.png') }}"

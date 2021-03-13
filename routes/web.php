@@ -70,3 +70,21 @@ Route::prefix('funciones-orden-superior/')->group(function () {
         ]);
     })->name('ejemplos3');
 });
+
+Route::prefix('definicion-tipos/')->group(function () {
+    Route::get('index/', function () {
+        return view('defTipos.index', [
+            'page' => 'modul',
+            'dad_page' => 'definicion-tipos'
+        ]);
+    })->name('definicion-tipos');
+
+    Route::get('ejemplos/{id}', function () {
+        $id = \Request::route('id');
+        return view('orden.ejemplos.ejemplo', [
+            'page' => 'ejemplo',
+            'identity' => $id,
+            'dad_page' => 'definicion-tipos'
+        ]);
+    })->name('ejemplos4');
+});
