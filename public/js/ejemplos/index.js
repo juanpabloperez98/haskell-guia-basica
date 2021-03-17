@@ -48,7 +48,7 @@ $(".probar").each(function (index) {
 
 
 // When start script
-if(page == 'funciones-orden-superior'){
+if(page == 'funciones-orden-superior' || page == 'definicion-tipos'){
     var mx = 4
 }else{
     var mx = 6

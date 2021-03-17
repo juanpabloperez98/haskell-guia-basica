@@ -81,7 +81,7 @@ Route::prefix('definicion-tipos/')->group(function () {
 
     Route::get('ejemplos/{id}', function () {
         $id = \Request::route('id');
-        return view('orden.ejemplos.ejemplo', [
+        return view('defTipos.ejemplos.ejemplo', [
             'page' => 'ejemplo',
             'identity' => $id,
             'dad_page' => 'definicion-tipos'

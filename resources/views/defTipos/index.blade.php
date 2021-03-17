@@ -1140,10 +1140,10 @@
             <div class="row mx-auto mt-md-5">
                 <div class="col-12 col-md-6">
                     <div class="card" style="">
-                        <div class="card-body">
+                        <div class="card-body" style="min-height: 250px">
                             <h5 class="card-title">Ejemplo 1</h5>
-                            <p class="card-text">Utilizando notación lamda, realice una función que determine si un número es par o impar, de ser par a dicho número se le sumara 2, de lo contrario se le sumara 1</p>
-                            <a  href="{{ route('ejemplos3', ['id'=>1]) }}" class="btn btn-amarillo">Ir al ejemplo</a>
+                            <p class="card-text">Defina un constructor de datos, el cual le permita a un usuario poder calcular el área de un cuadrado pasandole las dimensiones de la misma</p>
+                            <a  href="{{ route('ejemplos4', ['id'=>1]) }}" class="btn btn-amarillo">Ir al ejemplo</a>
                         </div>
                     </div>
                 </div>
@@ -1151,8 +1151,8 @@
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">Ejemplo 2</h5>
-                            <p class="card-text">Utilizando notación lamda, cree una función que permita recibir tres números y los junte de manera inversa (Por ejemplos 1 2 3, se debe juntar como el número 321)</p>
-                            <a  href="{{ route('ejemplos3', ['id'=>2]) }}" class="btn btn-azul">Ir al ejemplo</a>
+                            <p class="card-text">Crear un registro que almacena la información de una casa (calle, carrera, av, piso) y le permita al usuario poder visualizar el dato requerido de acuerdo a una opción. Si la opción es 1, entonces se muestra la calle, si el dato es 2, entonces se mostrará la carrera y así sucesivamente.</p>
+                            <a  href="{{ route('ejemplos4', ['id'=>2]) }}" class="btn btn-azul">Ir al ejemplo</a>
                         </div>
                     </div>
                 </div>
@@ -1160,8 +1160,8 @@
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">Ejemplo 3</h5>
-                            <p class="card-text">Realice una función que permite recibir dos números y devuelva una serie de números convertidos a cadenas, el primer número indicara desde que número se desea imprimir la serie y el segundo número indicara de ahí en adelante cuantos números se desea mostrar. Por ejemplo 3 4, el resultado seria “4 5 6 7”. Nota: es necesario utilizar parcialización un operador de sección para realizar este ejercicio</p>
-                            <a  href="{{ route('ejemplos3', ['id'=>3]) }}" class="btn btn-amarillo">Ir al ejemplo</a>
+                            <p class="card-text">Utilizando parámetros de tipo realice un constructor de dato que se denomine Persona, el cual va a tener 3 tipos definidos como nombre, edad, e identificación, el objetivo es realizar una función que recibe los tipos de datos String -> Integer -> Integer y se cree el constructor de dato persona, pasandole como parametros de tipos los ingresados por el usuario, al final se deberá mostrar un mensaje de saludo mostrando el nombre, la edad y la identificación</p>
+                            <a  href="{{ route('ejemplos4', ['id'=>3]) }}" class="btn btn-amarillo">Ir al ejemplo</a>
                         </div>
                     </div>
                 </div>
@@ -1169,30 +1169,11 @@
                     <div class="card">
                         <div class="card-body" style="min-height: 322px">
                             <h5 class="card-title">Ejemplo 4</h5>
-                            <p class="card-text">Utilizando funciones de orden superior realice una función que calcule el cuadrado de un número, luego se requiere que al resultado de esa operación se le vuelva a calcular el cuadrado, es necesario poder utilizar operadores de sección. Por ejemplo, si el número ingresado es 3, el primer cuadrado sería 9, y el segundo cuadrado sería 81.</p>
-                            <a  href="{{ route('ejemplos3', ['id'=>4]) }}" class="btn btn-azul">Ir al ejemplo</a>
+                            <p class="card-text">Crear una instancia YesNo la cual reciba un tipo de dato de lista y devuelva un mensaje de acuerde de si la lista está vacía, se deberá retornar “lista vacía” de lo contrario, lista con elementos</p>
+                            <a  href="{{ route('ejemplos4', ['id'=>4]) }}" class="btn btn-azul">Ir al ejemplo</a>
                         </div>
                     </div>
                 </div>
-
-                {{-- <div class="col-12 col-md-6">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Ejemplo 5</h5>
-                            <p class="card-text">Escriba una función que devuelva la multiplicación de dos números utilizando sumas</p>
-                            <a  href="{{ route('ejemplos2', ['id'=>5]) }}" class="btn btn-amarillo">Ir al ejemplo</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Ejemplo 6</h5>
-                            <p class="card-text">Sea una lista de números enteros |f1, f2, …, fn| defina un operador (|>) de forma que se tenga |f1*x, f2*x, …, fn*x|</p>
-                            <a  href="{{ route('ejemplos2', ['id'=>6]) }}" class="btn btn-azul">Ir al ejemplo</a>
-                        </div>
-                    </div>
-                </div> --}}
             </div>
         </div>
 
@@ -1211,13 +1192,13 @@
                 <div class="enunciado">
                     <h5 class="color-blue">Ejercicio 1</h5>
                     <P class="my-4">
-                        Se pide realizar una función compuesta que calcule la división entre dos números y luego sume el resultado de ese número con 100, ¿Cómo se realiza dicha función?
+                        Utilizando un tipo de dato llamado personaje que recibe dos parámetros su posición en x y su posición en y, se pide realizar una función llamada moverPersonaje, la cual recibirá las coordenadas de posición y retorna las posiciones del personaje aumentadas en 10, ¿Cómo se realiza dicha función?
                     </P>
                 </div>
 
                 <div class="desarrollo mb-5">
                     <div class="row mx-auto">
-                        <div class="col-lg-6 col-md-6 col-12">
+                        <div class="col-lg-12 col-md-6 col-12">
                             <form action="" class="form form-inline">
                                 <div class="form-check">
                                     <div class="checkbox-Soft mx-auto">
@@ -1226,8 +1207,9 @@
                                     </div>
                                     <pre class="line-numbers">
                                         <code class="language-haskell">
-                                            ejercicio1 :: Integer ->Integer -> Integer
-                                            ejercicio1 :: \y -> (100 +)(div y)
+                                            data Personaje = Personaje
+                                            moverPersonaje :: Personaje -> String
+                                            moverPersonaje (Personaje y) = show(+ 10) ++ show(y + 10)
                                         </code>
                                     </pre>
                                 </div>
@@ -1238,8 +1220,9 @@
                                     </div>
                                     <pre class="line-numbers">
                                         <code class="language-haskell">
-                                            ejercicio1 :: Integer ->Integer -> Integer
-                                            ejercicio1 = (100 +) . (div y)
+                                            data Personaje = Personaje Integer Integer
+                                            moverPersonaje :: Personaje -> String
+                                            moverPersonaje (Personaje x y) = show(x + 10) ++ show(y + 10)
                                         </code>
                                     </pre>
                                 </div>
@@ -1250,8 +1233,9 @@
                                     </div>
                                     <pre class="line-numbers">
                                         <code class="language-haskell">
-                                            ejercicio1 :: Integer -> Integer
-                                            ejercicio1 = \y -> (100 +) . (div y)
+                                            data Personaje = Personaje Integer Integer
+                                            moverPersonaje :: x y -> String
+                                            moverPersonaje (Personaje) = show(x + 10) ++ show(y + 10)
                                         </code>
                                     </pre>
                                 </div>
@@ -1262,14 +1246,14 @@
                                     </div>
                                     <pre class="line-numbers">
                                         <code class="language-haskell">
-                                            ejercicio1 :: Integer ->Integer -> Integer
-                                            ejercicio1 = \y -> (100 +) . (div y)
+                                            moverPersonaje :: Personaje -> String
+                                            moverPersonaje (Personaje x y) = show(x + 10) ++ show(y + 10)
                                         </code>
                                     </pre>
                                 </div>
                             </form>
                         </div>
-                        <div class="col-lg-6 col-md-6 col-12">
+                        <div class="col-lg-6 mx-auto text-center col-md-6 col-12">
                             <p class="question">
                                 ¿Cual crees que es la opcion correcta?
                                 <span>Seleccione una opcion y dar en continuar</span>
@@ -1299,7 +1283,7 @@
                                     </div>
                                     <div class="p-question">
                                         <p>
-                                            ¿Es posible aplicar a una función menos argumentos de los que realmente parece tener, y obtener de este modo una nueva función? 
+                                            ¿Una clase de tipos es una especie de interfaz que define un comportamiento y un tipo puede ser una instancia de esa clase si soporta ese comportamiento?
                                         </p>
                                         <span id="data-status1" class="false">Falso</span>
                                     </div>
@@ -1311,7 +1295,7 @@
                                     </div>
                                     <div class="p-question">
                                         <p>
-                                            ¿Todas las funciones declaradas en Haskell están basadas en el λ-cálculo, la cual es la única manera de poder escribir funciones en Haskell? 
+                                            ¿Se puede instanciar una clase YesNo para poder retornar cualquier tipo de dato?
                                         </p>
                                         <span id="data-status2" class="false">Falso</span>
                                     </div>
@@ -1323,7 +1307,7 @@
                                     </div>
                                     <div class="p-question">
                                         <p>
-                                            ¿Una excepción a la regla de las secciones es el operador (-)?
+                                            ¿Un constructor de datos puede tomar algunos valores como parámetros y producir un nuevo valor?
                                         </p>
                                         <span id="data-status3" class="false">Falso</span>
                                     </div>
@@ -1433,7 +1417,7 @@
     <script>
         var resultados = {
             1: {
-                "respuest_correct": "option4",
+                "respuest_correct": "option2",
                 "respuest_selected": ""
             },
             2: {
@@ -1442,7 +1426,7 @@
                     "respuest_selected": "false"
                 },
                 "question2": {
-                    "respuest_correct": "false",
+                    "respuest_correct": "true",
                     "respuest_selected": "false"
                 },
                 "question3": {
