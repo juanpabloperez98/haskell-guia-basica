@@ -110,7 +110,7 @@
                                     <div class="col-lg-4">
                                         <div class="content-img-slide"><img src="{{ asset('images/operadores.png') }}"
                                                 alt="imagen"></div>
-                                        <h3><a href="#">Sistema de clases en haskell</a></h3>
+                                        <h3><a href="{{ route('clases') }}">Sistema de clases en haskell</a></h3>
                                     </div>
                                     <div class="col-lg-4">
                                         <div class="content-img-slide"><img src="{{ asset('images/operadores.png') }}"

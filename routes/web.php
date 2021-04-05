@@ -88,3 +88,21 @@ Route::prefix('definicion-tipos/')->group(function () {
         ]);
     })->name('ejemplos4');
 });
+
+Route::prefix('sistema-clases/')->group(function () {
+    Route::get('index/', function () {
+        return view('clases.index', [
+            'page' => 'modul',
+            'dad_page' => 'clases'
+        ]);
+    })->name('clases');
+
+    Route::get('ejemplos/{id}', function () {
+        $id = \Request::route('id');
+        return view('clases.ejemplos.ejemplo', [
+            'page' => 'ejemplo',
+            'identity' => $id,
+            'dad_page' => 'clases'
+        ]);
+    })->name('ejemplos5');
+});
