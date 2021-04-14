@@ -38,6 +38,7 @@ $(".probar").each(function (index) {
             $(reducc).toggle('explode')
             $(explain).toggle('explode')
             $(this).toggle('explode')
+            $('#ejemplocuadro'+id).toggle('explode')
         } else {
             var id_form = "#form" + id
             $(id_form).addClass('form-inline')
@@ -48,7 +49,7 @@ $(".probar").each(function (index) {
 
 
 // When start script
-if(page == 'funciones-orden-superior' || page == 'definicion-tipos'){
+if(page == 'funciones-orden-superior' || page == 'definicion-tipos' || page == 'clases'){
     var mx = 4
 }else{
     var mx = 6

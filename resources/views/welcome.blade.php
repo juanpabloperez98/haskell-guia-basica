@@ -108,7 +108,7 @@
                                         <h3><a href="{{ route('definicion-tipos') }}">Definición de tipos</a></h3>
                                     </div>
                                     <div class="col-lg-4">
-                                        <div class="content-img-slide"><img src="{{ asset('images/operadores.png') }}"
+                                        <div class="content-img-slide"><img src="{{ asset('images/clases/clases.png') }}"
                                                 alt="imagen"></div>
                                         <h3><a href="{{ route('clases') }}">Sistema de clases en haskell</a></h3>
                                     </div>
