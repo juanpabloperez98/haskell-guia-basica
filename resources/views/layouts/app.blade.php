@@ -62,6 +62,20 @@
                                         Volver
                                     </a>
                                     @break
+                                    @case('listas')
+                                    <a class="nav-link active" aria-current="page" href="{{ route('listas') }}">
+                                        <img src="{{ asset('images/icons/arrow-back.png') }}" class="mr-1"
+                                            style="width: 15px" alt="arrow-icon">
+                                        Volver
+                                    </a>
+                                    @break
+                                    @case('grafos')
+                                    <a class="nav-link active" aria-current="page" href="{{ route('grafos') }}">
+                                        <img src="{{ asset('images/icons/arrow-back.png') }}" class="mr-1"
+                                            style="width: 15px" alt="arrow-icon">
+                                        Volver
+                                    </a>
+                                    @break
                                     @default
                                 @endswitch
                             </li>
@@ -135,6 +149,38 @@
                                 @case('clases')
                                 <li class="nav-item">
                                     <a class="nav-link active" aria-current="page" href="{{ route('definicion-tipos') }}">
+                                        <img src="{{ asset('images/icons/arrow-back.png') }}" class="mr-1"
+                                            style="width: 15px" alt="arrow-icon">
+                                        Volver
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="{{ route('listas') }}">
+                                        Siguiente
+                                        <img src="{{ asset('images/icons/arrow-next.png') }}" class="ml-1"
+                                            style="width: 15px" alt="arrow-icon">
+                                    </a>
+                                </li>
+                                @break
+                                @case('listas')
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="{{ route('clases') }}">
+                                        <img src="{{ asset('images/icons/arrow-back.png') }}" class="mr-1"
+                                            style="width: 15px" alt="arrow-icon">
+                                        Volver
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="{{ route('grafos') }}">
+                                        Siguiente
+                                        <img src="{{ asset('images/icons/arrow-next.png') }}" class="ml-1"
+                                            style="width: 15px" alt="arrow-icon">
+                                    </a>
+                                </li>
+                                @break
+                                @case('grafos')
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="{{ route('listas') }}">
                                         <img src="{{ asset('images/icons/arrow-back.png') }}" class="mr-1"
                                             style="width: 15px" alt="arrow-icon">
                                         Volver

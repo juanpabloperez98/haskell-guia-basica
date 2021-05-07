@@ -69,13 +69,13 @@
                     aspernatur est modi optio eos consequatur sint iusto, tempora excepturi id molestias. Aut odit accusamus
                     reprehenderit perspiciatis.
                 </p>
-                <div id="arrow_open" class="mr-auto text-left">
+                {{-- <div id="arrow_open" class="mr-auto text-left">
                     <a href="#" id="open-moduls" class="">
                         <img src="{{ asset('images/icons/arrow-right.png') }}" alt="">
                         Abrir Módulos
                     </a>
-                </div>
-                <div id="moduls-content" class="desactivate">
+                </div> --}}
+                <div id="moduls-content" class="">
                     <div id="carouselModuls" class="carousel slide" data-ride="carousel" data-interval="false">
                         <div class="carousel-inner">
                             <div class="carousel-item carousel-item-themes active">
@@ -113,29 +113,29 @@
                                         <h3><a href="{{ route('clases') }}">Sistema de clases en haskell</a></h3>
                                     </div>
                                     <div class="col-lg-4">
-                                        <div class="content-img-slide"><img src="{{ asset('images/operadores.png') }}"
+                                        <div class="content-img-slide"><img src="{{ asset('images/listas/main.png') }}"
                                                 alt="imagen"></div>
-                                        <h3>Listas</h3>
+                                        <h3><a href="{{ route('listas') }}">Listas</a></h3>
                                     </div>
                                 </div>
                             </div>
                             <div class="carousel-item carousel-item-themes">
                                 <div class="row">
-                                    <div class="col-lg-4">
-                                        <div class="content-img-slide"><img src="{{ asset('images/operadores.png') }}"
+                                    <div class="col-lg-6">
+                                        <div class="content-img-slide"><img src="{{ asset('images/entradaysalida/main.png') }}"
                                                 alt="imagen"></div>
                                         <h3><a href="#">Entrada y salida</a></h3>
                                     </div>
-                                    <div class="col-lg-4">
-                                        <div class="content-img-slide"><img src="{{ asset('images/operadores.png') }}"
+                                    <div class="col-lg-6">
+                                        <div class="content-img-slide"><img src="{{ asset('images/grafos/main.png') }}"
                                                 alt="imagen"></div>
-                                        <h3><a href="#">Arboles y grafos</a></h3>
+                                        <h3><a href="{{ route('grafos') }}">Arboles y grafos</a></h3>
                                     </div>
-                                    <div class="col-lg-4">
+                                    {{-- <div class="col-lg-4">
                                         <div class="content-img-slide"><img src="{{ asset('images/operadores.png') }}"
                                                 alt="imagen"></div>
                                         <h3><a href="#">Tipos de datos abstractos</a></h3>
-                                    </div>
+                                    </div> --}}
                                 </div>
                             </div>
                         </div>

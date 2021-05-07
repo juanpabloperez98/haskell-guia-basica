@@ -106,3 +106,40 @@ Route::prefix('sistema-clases/')->group(function () {
         ]);
     })->name('ejemplos5');
 });
+
+Route::prefix('listas/')->group(function () {
+    Route::get('index/', function () {
+        return view('listas.index', [
+            'page' => 'listas',
+            'dad_page' => 'listas'
+        ]);
+    })->name('listas');
+
+    Route::get('ejemplos/{id}', function () {
+        $id = \Request::route('id');
+        return view('listas.ejemplos.ejemplo', [
+            'page' => 'ejemplo',
+            'identity' => $id,
+            'dad_page' => 'listas'
+        ]);
+    })->name('ejemplos6');
+});
+
+
+Route::prefix('grafos/')->group(function () {
+    Route::get('index/', function () {
+        return view('grafos.index', [
+            'page' => 'grafos',
+            'dad_page' => 'grafos'
+        ]);
+    })->name('grafos');
+
+    Route::get('ejemplos/{id}', function () {
+        $id = \Request::route('id');
+        return view('grafos.ejemplos.ejemplo', [
+            'page' => 'ejemplo',
+            'identity' => $id,
+            'dad_page' => 'grafos'
+        ]);
+    })->name('ejemplos8');
+});

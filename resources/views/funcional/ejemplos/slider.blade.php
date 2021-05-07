@@ -1,11 +1,15 @@
 <aside class="bg-light">
     <h4 class="color-blue">Ejemplos</h4>
     <ul>
-        @if ($dad_page == 'funciones-orden-superior' || $dad_page == 'definicion-tipos' || $dad_page == 'clases')
+        @if ($dad_page == 'funciones-orden-superior' || $dad_page == 'definicion-tipos' || $dad_page == 'clases' 
+        || $dad_page == 'listas')
         <li><a href="#" data-name="ejemplo1" class="item">Ejemplo 1</a></li>
         <li><a href="#" data-name="ejemplo2" class="item">Ejemplo 2</a></li>
         <li><a href="#" data-name="ejemplo3" class="item">Ejemplo 3</a></li>
         <li><a href="#" data-name="ejemplo4" class="item">Ejemplo 4</a></li>
+        @elseif($dad_page == 'grafos')
+        <li><a href="#" data-name="ejemplo1" class="item">Ejemplo 1</a></li>
+        <li><a href="#" data-name="ejemplo2" class="item">Ejemplo 2</a></li>
         @else 
         <li><a href="#" data-name="ejemplo1" class="item">Ejemplo 1</a></li>
         <li><a href="#" data-name="ejemplo2" class="item">Ejemplo 2</a></li>

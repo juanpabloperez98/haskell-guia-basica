@@ -196,3 +196,10 @@ $(".formulario").each(function (index) {
         }
     })
 });
+
+/* $('#reg-btn').on('click',(e) => {
+    e.preventDefault()
+    $(".hidden").each(function() {
+        $(this).slideToggle("slow");
+    }
+} */
